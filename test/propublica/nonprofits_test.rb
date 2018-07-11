@@ -68,6 +68,18 @@ class Propublica::NonprofitsTest < Minitest::Test
     end
   end
 
+  def test_it_raises_error_if_fetching_basic_data_from_ein_find
+    VCR.use_cassette('rural_action_ein') do
+      rural_action = Propublica::Nonprofits.find(311124220)
+
+      error = assert_raises Propublica::Nonprofits::DataNotFetched do
+          rural_action.basic.city
+        end
+
+      assert_includes error.message, "BasicParser#city not fetched from API. This may be due to an API error or because you tried to access a Basic property on the full results"
+    end
+  end
+
   def test_organization_details_parsing
     VCR.use_cassette('rural_action_ein') do
       rural_action = Propublica::Nonprofits.find(311124220)

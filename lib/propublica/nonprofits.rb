@@ -26,5 +26,8 @@ module Propublica
       response = Faraday.get("#{API_BASE_URL}/organizations/#{ein}.json")
       JSON.parse(response.body)
     end
+
+    class Error < StandardError; end
+    class DataNotFetched < Error; end
   end
 end
