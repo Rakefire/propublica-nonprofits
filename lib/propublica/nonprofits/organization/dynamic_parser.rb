@@ -3,6 +3,7 @@ module Propublica
     class Organization
       class DynamicParser
         def self.fields(*fields)
+          @fields = fields
           fields.each do |field|
             define_method field do
               vars = self.instance_variable_get("@attributes")
@@ -17,6 +18,10 @@ module Propublica
 
         def initialize(attributes)
           @attributes = attributes || {}
+        end
+
+        def fields
+          self.class.instance_variable_get("@fields")
         end
 
         private

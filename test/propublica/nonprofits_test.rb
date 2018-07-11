@@ -239,6 +239,25 @@ class Propublica::NonprofitsTest < Minitest::Test
     assert_equal organization.basic.ein, 1
   end
 
+  def test_parser_objects_expose_fields
+    organization = Propublica::Nonprofits::Organization.new({"basic" => {},
+                                                             "organization" => {},
+                                                             "filings_with_data" => [{}],
+                                                             "filings_without_data" => [{}],
+                                                             "data_source" => "",
+                                                             "api_version" => "",
+                                                             "error" => ""})
+
+    assert_instance_of Array, organization.basic.fields
+    assert_instance_of Symbol, organization.basic.fields.first
+    assert_instance_of Array, organization.details.fields
+    assert_instance_of Symbol, organization.details.fields.first
+    assert_instance_of Array, organization.filings_with_data.first.fields
+    assert_instance_of Symbol, organization.filings_with_data.first.fields.first
+    assert_instance_of Array, organization.filings_without_data.first.fields
+    assert_instance_of Symbol, organization.filings_without_data.first.fields.first
+  end
+
   def test_it_raises_warning
     turn_off_web_stub! do
       result = Propublica::Nonprofits.find(311124220)
