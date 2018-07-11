@@ -1,0 +1,181 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://projects.propublica.org/nonprofits/api/v2/search.json?q=%27rural%27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Jul 2018 03:49:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4998'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7ba802bb4bf80bf4003cfbd3e5b19b191531280985; expires=Thu, 11-Jul-19
+        03:49:45 GMT; path=/; domain=.propublica.org; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"80f66bb1d718b343a332cee832e2ef73"
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-iad2623-IAD
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1531280985.155195,VS0,VE607
+      Vary:
+      - Accept,Accept-Encoding,Content-Type
+      Cache-Control:
+      - max-age=120, public, must-revalidate
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43884d4d2ed4247a-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_results":2651,"organizations":[{"ein":200870007,"strein":"20-0870007","name":"RURAL
+        COMPASSION","sub_name":"RURAL COMPASSION","city":"OZARK","state":"MO","ntee_code":"X20","raw_ntee_code":"X20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":481.8888},{"ein":861087174,"strein":"86-1087174","name":"RURAL
+        ADVANTAGE","sub_name":"RURAL ADVANTAGE","city":"FAIRMONT","state":"MN","ntee_code":"C32","raw_ntee_code":"C32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":481.21747},{"ein":521203899,"strein":"52-1203899","name":"RURAL
+        COALITION","sub_name":"RURAL COALITION","city":"WASHINGTON","state":"DC","ntee_code":"S30Z","raw_ntee_code":"S30Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":481.21747},{"ein":821970331,"strein":"82-1970331","name":"RURAL
+        COMMONWEALTH","sub_name":"RURAL COMMONWEALTH","city":"SHELBURNE FLS","state":"MA","ntee_code":"S32","raw_ntee_code":"S32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":481.21747},{"ein":481266401,"strein":"48-1266401","name":"RURAL
+        MADISON","sub_name":"RURAL MADISON","city":"MADISON","state":"VA","ntee_code":"C30","raw_ntee_code":"C30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":481.21747},{"ein":841291144,"strein":"84-1291144","name":"RURAL
+        SOLUTIONS","sub_name":"RURAL SOLUTIONS","city":"STERLING","state":"CO","ntee_code":"S20Z","raw_ntee_code":"S20Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":481.21747},{"ein":264687883,"strein":"26-4687883","name":"RURAL
+        HUMBOLDT","sub_name":"RURAL HUMBOLDT","city":"EUREKA","state":"CA","ntee_code":"P20","raw_ntee_code":"P20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":481.15854},{"ein":815463115,"strein":"81-5463115","name":"RURAL
+        PROJECT","sub_name":"RURAL PROJECT","city":"MEMPHIS","state":"TN","ntee_code":"S32","raw_ntee_code":"S32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":481.15854},{"ein":371318004,"strein":"37-1318004","name":"RURAL
+        PARTNERS","sub_name":"RURAL PARTNERS","city":"SPRINGFIELD","state":"IL","ntee_code":"S20","raw_ntee_code":"S20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":480.81235},{"ein":812777920,"strein":"81-2777920","name":"RURAL
+        RENEW","sub_name":"RURAL RENEW","city":"SAN FRANCISCO","state":"CA","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":480.5003},{"ein":911276581,"strein":"91-1276581","name":"FOOTHILLS
+        RURAL ASSOCIATION","sub_name":"FOOTHILLS RURAL ASSOCIATION","city":"SPOKANE","state":"WA","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":261899392,"strein":"26-1899392","name":"ILLINOIS
+        RURAL HEALTHNET","sub_name":"ILLINOIS RURAL HEALTHNET","city":"CEDAR RAPIDS","state":"IA","ntee_code":"W050","raw_ntee_code":"W050","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":202325043,"strein":"20-2325043","name":"PENNSYLVANIA
+        RURAL PARTNERS","sub_name":"PENNSYLVANIA RURAL PARTNERS","city":"UNIVERSITY
+        PK","state":"PA","ntee_code":"C03","raw_ntee_code":"C03","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":222527596,"strein":"22-2527596","name":"RURAL
+        \u0026 MIGRANT MINISTRIES","sub_name":"RURAL \u0026 MIGRANT MINISTRIES","city":"POUGHKEEPSIE","state":"NY","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":472556824,"strein":"47-2556824","name":"RURAL
+        AMERICA CENTER","sub_name":"RURAL AMERICA CENTER ","city":"NEWNAN","state":"GA","ntee_code":"P20","raw_ntee_code":"P20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":453854485,"strein":"45-3854485","name":"RURAL
+        ASPIRATIONS PROJECT","sub_name":"RURAL ASPIRATIONS PROJECT ","city":"BAR HARBOR","state":"ME","ntee_code":"B99","raw_ntee_code":"B99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":812710712,"strein":"81-2710712","name":"RURAL
+        DATA INC","sub_name":"RURAL DATA INC","city":"LAMONT","state":"FL","ntee_code":"W50","raw_ntee_code":"W50","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":453962601,"strein":"45-3962601","name":"RURAL
+        DIGITAL BRIDGE","sub_name":"RURAL DIGITAL BRIDGE","city":"BOONEVILLE","state":"AR","ntee_code":"S32","raw_ntee_code":"S32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":203853146,"strein":"20-3853146","name":"RURAL
+        EMERGENCY ALLIANCE","sub_name":"RURAL EMERGENCY ALLIANCE","city":"VALLEY CENTER","state":"CA","ntee_code":"M20","raw_ntee_code":"M20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":311633254,"strein":"31-1633254","name":"RURAL
+        FAMILY DEVELOPMENT","sub_name":"RURAL FAMILY DEVELOPMENT","city":"RICHMOND","state":"VA","ntee_code":"B80","raw_ntee_code":"B80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":412213330,"strein":"41-2213330","name":"RURAL
+        HALL ASA","sub_name":"RURAL HALL ASA","city":"RURAL HALL","state":"NC","ntee_code":"N63","raw_ntee_code":"N63","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":461191020,"strein":"46-1191020","name":"RURAL
+        HEALTH COLLABORATIVE","sub_name":"RURAL HEALTH COLLABORATIVE","city":"PORTLAND","state":"Oregon","ntee_code":"Q33","raw_ntee_code":"Q33","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":850257035,"strein":"85-0257035","name":"RURAL
+        HOUSING INC","sub_name":"RURAL HOUSING INC","city":"ALBUQUERQUE","state":"NM","ntee_code":"L21Z","raw_ntee_code":"L21Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":465683604,"strein":"46-5683604","name":"RURAL
+        LIBRARY FOUNDATION","sub_name":"RURAL LIBRARY FOUNDATION","city":"CHESTER
+        SPRGS","state":"PA","ntee_code":"B70","raw_ntee_code":"B70","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":570519864,"strein":"57-0519864","name":"RURAL
+        MISSION INC","sub_name":"RURAL MISSION INC","city":"JOHNS ISLAND","state":"SC","ntee_code":"B22Z","raw_ntee_code":"B22Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":820459048,"strein":"82-0459048","name":"RURAL
+        ROOTS INC","sub_name":"RURAL ROOTS INC","city":"MOSCOW","state":"ID","ntee_code":"K40","raw_ntee_code":"K40","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":466012282,"strein":"46-6012282","name":"RURAL
+        SOCIOLOGICAL SOCIETY","sub_name":"RURAL SOCIOLOGICAL SOCIETY","city":"MACOMB","state":"IL","ntee_code":"V21C","raw_ntee_code":"V21C","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":810541148,"strein":"81-0541148","name":"RURAL
+        SUSTAINABILITY ORGANIZATION","sub_name":"RURAL SUSTAINABILITY ORGANIZATION
+        ","city":"DRUMMOND","state":"MT","ntee_code":"K20","raw_ntee_code":"K20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":421084280,"strein":"42-1084280","name":"RURAL
+        UTILITY SOLUTIONS","sub_name":"RURAL UTILITY SOLUTIONS ","city":"SPENCER","state":"IA","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":821787479,"strein":"82-1787479","name":"STRENGTHENING
+        RURAL COMMUNITIES","sub_name":"STRENGTHENING RURAL COMMUNITIES","city":"NEW
+        CANEY","state":"TX","ntee_code":"P20","raw_ntee_code":"P20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":271395754,"strein":"27-1395754","name":"YOUNG
+        RURAL AVIATORS","sub_name":"YOUNG RURAL AVIATORS","city":"BURNS","state":"Oregon","ntee_code":"B90","raw_ntee_code":"B90","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.6527},{"ein":384058749,"strein":"38-4058749","name":"AMERICAN
+        RURAL INC","sub_name":"AMERICAN RURAL INC","city":"COLUMBIA FLS","state":"MT","ntee_code":"S32","raw_ntee_code":"S32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":460398656,"strein":"46-0398656","name":"DAKOTA
+        RURAL ACTION","sub_name":"DAKOTA RURAL ACTION","city":"BROOKINGS","state":"SD","ntee_code":"B95Z","raw_ntee_code":"B95Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":140662900,"strein":"14-0662900","name":"FISHKILL
+        RURAL CEMETERY","sub_name":"FISHKILL RURAL CEMETERY","city":"FISHKILL","state":"NY","ntee_code":null,"raw_ntee_code":null,"subseccd":13,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":111996550,"strein":"11-1996550","name":"HUNTINGTON
+        RURAL CEMETERY","sub_name":"HUNTINGTON RURAL CEMETERY","city":"HUNTINGTON","state":"NY","ntee_code":null,"raw_ntee_code":null,"subseccd":13,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":943342390,"strein":"94-3342390","name":"RURAL
+        ALLIANCE INC","sub_name":"RURAL ALLIANCE INC","city":"SACRAMENTO","state":"CA","ntee_code":"B99","raw_ntee_code":"B99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":451454504,"strein":"45-1454504","name":"RURAL
+        APPALACHIAN PROJECT","sub_name":"RURAL APPALACHIAN PROJECT","city":"HARRIMAN","state":"TN","ntee_code":"X212","raw_ntee_code":"X212","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":752454806,"strein":"75-2454806","name":"RURAL
+        CELLULAR ASSOCIATION","sub_name":"RURAL CELLULAR ASSOCIATION","city":"WASHINGTON","state":"DC","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":820520286,"strein":"82-0520286","name":"RURAL
+        COLLABORATIVE INC","sub_name":"RURAL COLLABORATIVE INC","city":"RAPID CITY","state":"SD","ntee_code":"L30","raw_ntee_code":"L30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":223932392,"strein":"22-3932392","name":"RURAL
+        CONNECTION CORPORATION","sub_name":"RURAL CONNECTION CORPORATION","city":"BOISE","state":"ID","ntee_code":"E21","raw_ntee_code":"E21","subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":421.06528},{"ein":462931992,"strein":"46-2931992","name":"RURAL
+        ENTREPRENEURSHIP LAB","sub_name":"RURAL ENTREPRENEURSHIP LAB","city":"TAYLORSVILLE","state":"NC","ntee_code":"P99","raw_ntee_code":"P99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":61007256,"strein":"06-1007256","name":"RURAL
+        HOMES LTD","sub_name":"RURAL HOMES LTD","city":"PLAINFIELD","state":"CT","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":474747050,"strein":"47-4747050","name":"RURAL
+        HOPE FOUNDATION","sub_name":"RURAL HOPE FOUNDATION","city":"STERLING","state":"VA","ntee_code":"P20","raw_ntee_code":"P20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":464580837,"strein":"46-4580837","name":"RURAL
+        HOPE FOUNDATION","sub_name":"RURAL HOPE FOUNDATION","city":"SUNNYVALE","state":"CA","ntee_code":"P20","raw_ntee_code":"P20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":562091778,"strein":"56-2091778","name":"RURAL
+        HOPE GROUP","sub_name":"RURAL HOPE GROUP","city":"GREENVILLE","state":"NC","ntee_code":"P40","raw_ntee_code":"P40","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":470796719,"strein":"47-0796719","name":"RURAL
+        INVESTMENT CORPORATION","sub_name":"RURAL INVESTMENT CORPORATION","city":"LYONS","state":"NE","ntee_code":"C32Z","raw_ntee_code":"C32Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":30343987,"strein":"03-0343987","name":"RURAL
+        JUSTICE CENTER","sub_name":"RURAL JUSTICE CENTER","city":"MONTPELIER","state":"VT","ntee_code":"I05","raw_ntee_code":"I05","subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":421.06528},{"ein":900151338,"strein":"90-0151338","name":"RURAL
+        LIFE FOUNDATION","sub_name":"RURAL LIFE FOUNDATION ","city":"BEAR RIVER CY","state":"UT","ntee_code":"S32","raw_ntee_code":"S32","subseccd":4,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":421.06528},{"ein":931159856,"strein":"93-1159856","name":"RURAL
+        ORGANIZING PROJECT","sub_name":"RURAL ORGANIZING PROJECT","city":"SCAPPOOSE","state":"Oregon","ntee_code":"R30","raw_ntee_code":"R30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":264819257,"strein":"26-4819257","name":"RURAL
+        SUPPORTING ORGANIZATION","sub_name":"RURAL SUPPORTING ORGANIZATION","city":"WHITESBURG","state":"KY","ntee_code":"P113","raw_ntee_code":"P113","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":264120844,"strein":"26-4120844","name":"RURAL
+        TECHNOLOGY FUND","sub_name":"RURAL TECHNOLOGY FUND","city":"GAINESVILLE","state":"GA","ntee_code":"B82","raw_ntee_code":"B82","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":272293747,"strein":"27-2293747","name":"RURAL
+        TELECOMMUNICATIONS CONGRESS","sub_name":"RURAL TELECOMMUNICATIONS CONGRESS","city":"KNOXVILLE","state":"TN","ntee_code":"W80","raw_ntee_code":"W80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":811275771,"strein":"81-1275771","name":"RURAL
+        UTAH ALLIANCE","sub_name":"RURAL UTAH ALLIANCE","city":"SAINT GEORGE","state":"UT","ntee_code":"W02","raw_ntee_code":"W02","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":10384393,"strein":"01-0384393","name":"RURAL
+        WORKSHOP COLLABORATIVE","sub_name":"RURAL WORKSHOP COLLABORATIVE","city":"DOVR
+        FOXCROFT","state":"ME","ntee_code":"J30Z","raw_ntee_code":"J30Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":273007674,"strein":"27-3007674","name":"SHERIDAN
+        RURAL FIRE","sub_name":"SHERIDAN RURAL FIRE","city":"SHERIDAN","state":"WY","ntee_code":"M24","raw_ntee_code":"M24","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":202934930,"strein":"20-2934930","name":"STRENGTHENING
+        RURAL FAMILIES","sub_name":"STRENGTHENING RURAL FAMILIES","city":"PHILOMATH","state":"Oregon","ntee_code":"P24","raw_ntee_code":"P24","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":813456389,"strein":"81-3456389","name":"WELL
+        RURAL RESOURCE","sub_name":"WELL RURAL RESOURCE","city":"IBERIA","state":"MO","ntee_code":"S32","raw_ntee_code":"S32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.06528},{"ein":631282477,"strein":"63-1282477","name":"ALABAMA
+        RURAL MINISTRY","sub_name":"ALABAMA RURAL MINISTRY","city":"AUBURN","state":"AL","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":150279170,"strein":"15-0279170","name":"CORTLAND
+        RURAL CEMETERY","sub_name":"CORTLAND RURAL CEMETERY","city":"CORTLAND","state":"NY","ntee_code":null,"raw_ntee_code":null,"subseccd":13,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":471298396,"strein":"47-1298396","name":"CREATIVE
+        RURAL INITIATIVES","sub_name":"CREATIVE RURAL INITIATIVES","city":"STERLING","state":"CO","ntee_code":"A20","raw_ntee_code":"A20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":870339348,"strein":"87-0339348","name":"DIXIE
+        ESCALANTE RURAL","sub_name":"DIXIE ESCALANTE RURAL","city":"BERYL","state":"UT","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":860380470,"strein":"86-0380470","name":"FSL
+        RURAL DEVELOPMENT","sub_name":"FSL RURAL DEVELOPMENT","city":"PHOENIX","state":"AZ","ntee_code":"L22Z","raw_ntee_code":"L22Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":146026339,"strein":"14-6026339","name":"GILBOA
+        RURAL CEMETERY","sub_name":"GILBOA RURAL CEMETERY","city":"GILBOA","state":"NY","ntee_code":"Y50","raw_ntee_code":"Y50","subseccd":13,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":475091675,"strein":"47-5091675","name":"GROWING
+        RURAL OPPORTUNITIES","sub_name":"GROWING RURAL OPPORTUNITIES","city":"COLUMBUS","state":"NC","ntee_code":"K20","raw_ntee_code":"K20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":222152819,"strein":"22-2152819","name":"KELLOGGSVILLE
+        RURAL CEMETARY","sub_name":"KELLOGGSVILLE RURAL CEMETARY","city":"MORAVIA","state":"NY","ntee_code":"Y50","raw_ntee_code":"Y50","subseccd":13,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":200427337,"strein":"20-0427337","name":"MAINE
+        RURAL PARTNERS","sub_name":"MAINE RURAL PARTNERS","city":"FARMINGTON","state":"ME","ntee_code":"S32","raw_ntee_code":"S32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":140978200,"strein":"14-0978200","name":"POUGHKEEPSIE
+        RURAL CEMETERY","sub_name":"POUGHKEEPSIE RURAL CEMETERY","city":"POUGHKEEPSIE","state":"NY","ntee_code":null,"raw_ntee_code":null,"subseccd":13,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":311124220,"strein":"31-1124220","name":"RURAL
+        ACTION INC","sub_name":"RURAL ACTION INC","city":"THE PLAINS","state":"OH","ntee_code":"S320","raw_ntee_code":"S320","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":61656357,"strein":"06-1656357","name":"RURAL
+        ADVANCEMENT INSTITUTE","sub_name":"RURAL ADVANCEMENT INSTITUTE","city":"PITTSBORO","state":"NC","ntee_code":"K20","raw_ntee_code":"K20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":541673028,"strein":"54-1673028","name":"RURAL
+        EDUCATION FOUNDATION","sub_name":"RURAL EDUCATION FOUNDATION","city":"FARMVILLE","state":"VA","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":382852975,"strein":"38-2852975","name":"RURAL
+        FUTURES INTERNATIONAL","sub_name":"RURAL FUTURES INTERNATIONAL ","city":"SCOTTS","state":"MI","ntee_code":"Q310","raw_ntee_code":"Q310","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":640945578,"strein":"64-0945578","name":"RURAL
+        HOSPITAL ALLIANCE","sub_name":"RURAL HOSPITAL ALLIANCE","city":"MADISON","state":"MS","ntee_code":"S46","raw_ntee_code":"S46","subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":581175043,"strein":"58-1175043","name":"RURAL
+        HOUSING INC","sub_name":"RURAL HOUSING INC","city":"BUTLER","state":"GA","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":621546161,"strein":"62-1546161","name":"RURAL
+        RESOURCES INCORPORATED","sub_name":"RURAL RESOURCES INCORPORATED","city":"GREENEVILLE","state":"TN","ntee_code":"C30Z","raw_ntee_code":"C30Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":112616152,"strein":"11-2616152","name":"RURAL
+        REVITILIZATION CORPORATION","sub_name":"RURAL REVITILIZATION CORPORATION","city":"OLEAN","state":"NY","ntee_code":"S32Z","raw_ntee_code":"S32Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":421.01373},{"ein":800872063,"strein":"80-0872063","name":"AMERICAN
+        RURAL INC","sub_name":"AMERICAN RURAL INC","city":"WHITEFISH","state":"MT","ntee_code":"S41","raw_ntee_code":"S41","subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":272366611,"strein":"27-2366611","name":"ARIZONA
+        RURAL REHABILITATION","sub_name":"ARIZONA RURAL REHABILITATION","city":"PHOENIX","state":"AZ","ntee_code":"B90","raw_ntee_code":"B90","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":813496415,"strein":"81-3496415","name":"GALLUP
+        RURAL TRANSIT","sub_name":"GALLUP RURAL TRANSIT ","city":"GALLUP","state":"NM","ntee_code":"W20","raw_ntee_code":"W20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":204987041,"strein":"20-4987041","name":"KEEP
+        NIPOMO RURAL","sub_name":"KEEP NIPOMO RURAL","city":"NIPOMO","state":"CA","ntee_code":"C32","raw_ntee_code":"C32","subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":420.71082},{"ein":472779608,"strein":"47-2779608","name":"PROTECT
+        RURAL NAPA","sub_name":"PROTECT RURAL NAPA","city":"NAPA","state":"CA","ntee_code":"R40","raw_ntee_code":"R40","subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":800740234,"strein":"80-0740234","name":"RURAL
+        AGRICULTURAL PRESEVATIONIST","sub_name":"RURAL AGRICULTURAL PRESEVATIONIST","city":"FRANKLIN","state":"KY","ntee_code":"A50","raw_ntee_code":"A50","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":931194014,"strein":"93-1194014","name":"RURAL
+        ARTS CENTER","sub_name":"RURAL ARTS CENTER","city":"LORANE","state":"Oregon","ntee_code":"A99Z","raw_ntee_code":"A99Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":453516372,"strein":"45-3516372","name":"RURAL
+        ASIA INITIATIVE","sub_name":"RURAL ASIA INITIATIVE","city":"MECHANICSVLLE","state":"VA","ntee_code":"Q33","raw_ntee_code":"Q33","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":273734117,"strein":"27-3734117","name":"RURAL
+        BROADBAND ALLIANCE","sub_name":"RURAL BROADBAND ALLIANCE","city":"WASHINGTON","state":"DC","ntee_code":"S40","raw_ntee_code":"S40","subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":621277091,"strein":"62-1277091","name":"RURAL
+        COMMUNITIES INC","sub_name":"RURAL COMMUNITIES INC","city":"NEW IBERIA","state":"LA","ntee_code":"S32Z","raw_ntee_code":"S32Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":942512284,"strein":"94-2512284","name":"RURAL
+        COMMUNITY ASSISTANCE","sub_name":"RURAL COMMUNITY ASSISTANCE","city":"WEST
+        SACRAMENTO","state":"CA","ntee_code":"S200","raw_ntee_code":"S200","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":911158970,"strein":"91-1158970","name":"RURAL
+        DEVELOPEMENT INSTITUTE","sub_name":"RURAL DEVELOPEMENT INSTITUTE","city":"SEATTLE","state":"WA","ntee_code":"S02","raw_ntee_code":"S02","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":510188108,"strein":"51-0188108","name":"RURAL
+        DEVELOPMENT CORP","sub_name":"RURAL DEVELOPMENT CORP","city":"VINELAND","state":"NJ","ntee_code":"S32","raw_ntee_code":"S32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":223139262,"strein":"22-3139262","name":"RURAL
+        DEVELOPMENT INC","sub_name":"RURAL DEVELOPMENT INC","city":"TURNERS FALLS","state":"MA","ntee_code":"L20Z","raw_ntee_code":"L20Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":680342504,"strein":"68-0342504","name":"RURAL
+        EDUCATION INSTITUTE","sub_name":"RURAL EDUCATION INSTITUTE","city":"PARADISE","state":"CA","ntee_code":"B60","raw_ntee_code":"B60","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":421150011,"strein":"42-1150011","name":"RURAL
+        EMPLOYMENT ALTERNATIVE","sub_name":"RURAL EMPLOYMENT ALTERNATIVE ","city":"CONROY","state":"IA","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":371056692,"strein":"37-1056692","name":"RURAL
+        HEALTH INC","sub_name":"RURAL HEALTH INC","city":"ANNA","state":"IL","ntee_code":"E39Z","raw_ntee_code":"E39Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":366117676,"strein":"36-6117676","name":"RURAL
+        IMPROVEMENT SOCIETY","sub_name":"RURAL IMPROVEMENT SOCIETY","city":"SYCAMORE","state":"IL","ntee_code":null,"raw_ntee_code":null,"subseccd":2,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":420.71082},{"ein":811372714,"strein":"81-1372714","name":"RURAL
+        MONTANA FOUNDATION","sub_name":"RURAL MONTANA FOUNDATION","city":"HELENA","state":"MT","ntee_code":"I80","raw_ntee_code":"I80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":260142027,"strein":"26-0142027","name":"RURAL
+        REDEMPTIONS INC","sub_name":"RURAL REDEMPTIONS INC","city":"AUBURN","state":"WA","ntee_code":"P20","raw_ntee_code":"P20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":911188105,"strein":"91-1188105","name":"RURAL
+        RESEARCH RESOURCES","sub_name":"RURAL RESEARCH RESOURCES","city":"COLVILLE","state":"WA","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":455579044,"strein":"45-5579044","name":"RURAL
+        RESOURCES HOLDING","sub_name":"RURAL RESOURCES HOLDING","city":"COLVILLE","state":"WA","ntee_code":"S470","raw_ntee_code":"S470","subseccd":25,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":342030872,"strein":"34-2030872","name":"RURAL
+        SHEPHERDS NETWORK","sub_name":"RURAL SHEPHERDS NETWORK","city":"SOMERS","state":"MT","ntee_code":"X21","raw_ntee_code":"X21","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":472352973,"strein":"47-2352973","name":"RURAL
+        VIRGINIA ALLIANCE","sub_name":"RURAL VIRGINIA ALLIANCE","city":"FLINT HALL","state":"VA","ntee_code":"K01","raw_ntee_code":"K01","subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082},{"ein":810565630,"strein":"81-0565630","name":"TEXAS
+        RURAL FOUNDATION","sub_name":"TEXAS RURAL FOUNDATION","city":"AUSTIN","state":"TX","ntee_code":"E80","raw_ntee_code":"E80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082}],"num_pages":27,"cur_page":0,"page_offset":0,"per_page":100,"search_query":"''rural''","selected_state":null,"selected_ntee":null,"selected_code":null,"data_source":"ProPublica
+        Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
+        Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
+        Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2,"error":"WARNING:
+        Version 2 of the ProPublica Nonprofit Explorer API will be deprecated by the
+        end of 2017. Check https://projects.propublica.org/nonprofits/api/ for updates
+        at a later date."}'
+    http_version: 
+  recorded_at: Wed, 11 Jul 2018 03:49:45 GMT
+recorded_with: VCR 4.0.0
