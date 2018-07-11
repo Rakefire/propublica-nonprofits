@@ -52,6 +52,10 @@ module Propublica
         @full_request = (attributes.keys & required_keys) == required_keys
         return if @full_request == true
 
+        fetch_full_request!
+      end
+
+      def fetch_full_request!
         # Fetch all attributes and merge with what we have now
         new_attrs = Propublica::Nonprofits.find_attributes(self.basic.ein)
         attributes.merge!(new_attrs)
