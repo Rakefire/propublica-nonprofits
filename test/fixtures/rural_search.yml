@@ -19,48 +19,44 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 11 Jul 2018 03:49:45 GMT
+      - Fri, 30 Nov 2018 13:37:22 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Content-Length:
-      - '4998'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d7ba802bb4bf80bf4003cfbd3e5b19b191531280985; expires=Thu, 11-Jul-19
-        03:49:45 GMT; path=/; domain=.propublica.org; HttpOnly
+      - __cfduid=daa36c35abe9fcd4f42710b755133c7651543585042; expires=Sat, 30-Nov-19
+        13:37:22 GMT; path=/; domain=.propublica.org; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
-      Etag:
-      - W/"80f66bb1d718b343a332cee832e2ef73"
-      Accept-Ranges:
-      - bytes
-      Via:
-      - 1.1 varnish
-      Age:
-      - '0'
-      X-Served-By:
-      - cache-iad2623-IAD
-      X-Cache:
-      - MISS
-      X-Cache-Hits:
-      - '0'
-      X-Timer:
-      - S1531280985.155195,VS0,VE607
       Vary:
       - Accept,Accept-Encoding,Content-Type
+      Surrogate-Key:
+      - nonprofits
       Cache-Control:
-      - max-age=120, public, must-revalidate
+      - public, max-age=604800, s-maxage=31536000
+      Surrogate-Control:
+      - public, max-age=31536000
+      Etag:
+      - W/"34f2b14277e6a848a2be31798b6d9bd5"
+      X-Request-Id:
+      - d171f0a2-fb4c-460e-bb4c-ad5efd8202c0
+      X-Runtime:
+      - '0.662363'
+      Cf-Cache-Status:
+      - HIT
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 43884d4d2ed4247a-IAD
+      - 481db5543b965570-ORD
     body:
       encoding: ASCII-8BIT
       string: '{"total_results":2651,"organizations":[{"ein":200870007,"strein":"20-0870007","name":"RURAL
@@ -172,10 +168,7 @@ http_interactions:
         RURAL FOUNDATION","sub_name":"TEXAS RURAL FOUNDATION","city":"AUSTIN","state":"TX","ntee_code":"E80","raw_ntee_code":"E80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":420.71082}],"num_pages":27,"cur_page":0,"page_offset":0,"per_page":100,"search_query":"''rural''","selected_state":null,"selected_ntee":null,"selected_code":null,"data_source":"ProPublica
         Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
         Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
-        Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2,"error":"WARNING:
-        Version 2 of the ProPublica Nonprofit Explorer API will be deprecated by the
-        end of 2017. Check https://projects.propublica.org/nonprofits/api/ for updates
-        at a later date."}'
+        Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
     http_version: 
-  recorded_at: Wed, 11 Jul 2018 03:49:45 GMT
+  recorded_at: Fri, 30 Nov 2018 13:37:22 GMT
 recorded_with: VCR 4.0.0

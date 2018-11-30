@@ -1,4 +1,4 @@
-require "test_helper"
+require_relative "../test_helper"
 
 class Propublica::NonprofitsTest < Minitest::Test
   parallelize_me!
@@ -258,11 +258,12 @@ class Propublica::NonprofitsTest < Minitest::Test
     assert_instance_of Symbol, organization.filings_without_data.first.fields.first
   end
 
-  def test_it_raises_warning
+  def test_it_no_longer_raises_warning
     turn_off_web_stub! do
       result = Propublica::Nonprofits.find(311124220)
-      assert_equal result.error,
-        %(WARNING: Version 2 of the ProPublica Nonprofit Explorer API will be deprecated by the end of 2017. Check https://projects.propublica.org/nonprofits/api/ for updates at a later date.)
+
+      assert !result.error?
+      assert_equal result.error, ""
     end
   end
 

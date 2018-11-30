@@ -38,28 +38,44 @@ module Propublica
 
       def error
         ensure_full_request!
-        @error ||= attributes["error"]
+        @error ||= attributes["error"] || ""
+      end
+
+      def error?
+        !error.empty?
       end
 
       private
 
       attr_reader :attributes
+      attr_accessor :full_request_made
+
+      def full_request_made?
+        !!full_request_made
+      end
 
       def ensure_full_request!
-        return if @full_request == true
+        return if full_request_made?
 
-        required_keys = ["organization", "filings_with_data", "filings_without_data", "data_source", "api_version", "error"].freeze
-        @full_request = (attributes.keys & required_keys) == required_keys
-        return if @full_request == true
+        self.full_request_made = (attributes.keys & required_keys) == required_keys
+        return if full_request_made?
 
         fetch_full_request!
       end
 
+      def required_keys
+        ["organization", "filings_with_data", "filings_without_data", "data_source", "api_version", "error"].freeze
+      end
+
+      def ein
+        @attributes.dig("organization", "ein") || self.basic.ein
+      end
+
       def fetch_full_request!
         # Fetch all attributes and merge with what we have now
-        new_attrs = Propublica::Nonprofits.find_attributes(self.basic.ein)
+        new_attrs = Propublica::Nonprofits.find_attributes(ein)
         attributes.merge!(new_attrs)
-        @full_request = true
+        self.full_request_made = true
       end
     end
   end
