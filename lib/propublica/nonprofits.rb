@@ -9,17 +9,38 @@ API_SEARCH_PATH = %(/nonprofits/api/v2/search.json)
 
 module Propublica
   module Nonprofits
-    def self.search(term, state: nil, page: nil)
-      response = connection.get do |request|
-        request.url(API_SEARCH_PATH)
+    def self.search(term, state: nil, page: nil, fetch_all: false)
+      organizations = []
+      more_pages = true
 
-        request.params["q"] = term
-        request.params["state[id]"] = state if state
-        request.params["page"] = page if page
+      page =
+        case
+        when page
+          page
+        when fetch_all && page
+          raise "Page is set but we are fetching all, chose one or the other"
+        else
+          0
+        end
+
+      while (more_pages)
+        response = connection.get do |request|
+          request.url(API_SEARCH_PATH)
+
+          request.params["q"] = term
+          request.params["state[id]"] = state if state
+          request.params["page"] = page if page
+        end
+        
+
+        attributes = JSON.parse(response.body)
+        new_organizations = attributes.fetch("organizations", [])
+        organizations.push(*new_organizations)
+
+        more_pages = fetch_all && new_organizations.any?
+        page += 1
       end
 
-      attributes = JSON.parse(response.body)
-      organizations = attributes.dig("organizations")
       organizations.lazy.map do |basic_attrs|
         Propublica::Nonprofits::Organization.new("basic" => basic_attrs)
       end

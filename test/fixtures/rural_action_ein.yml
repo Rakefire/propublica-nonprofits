@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 18 Nov 2019 21:48:33 GMT
+      - Mon, 18 Nov 2019 23:45:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=da2e5aac5919067beefa2ab5b9ed14d7a1574113713; expires=Tue, 17-Nov-20
-        21:48:33 GMT; path=/; domain=.propublica.org; HttpOnly
+      - __cfduid=d7c932097c6602a3efa1730c1893f80011574120718; expires=Tue, 17-Nov-20
+        23:45:18 GMT; path=/; domain=.propublica.org; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -48,7 +48,7 @@ http_interactions:
       Cf-Cache-Status:
       - HIT
       Age:
-      - '992'
+      - '7997'
       Alt-Svc:
       - h3-23=":443"; ma=86400
       Expect-Ct:
@@ -56,7 +56,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 537d2637df75f10a-IAD
+      - 537dd139ddfdea49-IAD
     body:
       encoding: ASCII-8BIT
       string: '{"organization":{"id":311124220,"ein":311124220,"name":"RURAL ACTION
@@ -65,7 +65,7 @@ http_interactions:
         Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
         Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
     http_version: 
-  recorded_at: Mon, 18 Nov 2019 21:48:33 GMT
+  recorded_at: Mon, 18 Nov 2019 23:45:18 GMT
 - request:
     method: get
     uri: https://projects.propublica.org/nonprofits/api/v2/organizations/311124220.json
@@ -85,7 +85,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 18 Nov 2019 21:48:34 GMT
+      - Mon, 18 Nov 2019 23:45:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -93,8 +93,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dd5af5bf9c4a46829e03212c838a788051574113714; expires=Tue, 17-Nov-20
-        21:48:34 GMT; path=/; domain=.propublica.org; HttpOnly
+      - __cfduid=ddfac75e9988cd17eb22484e6bb5131801574120718; expires=Tue, 17-Nov-20
+        23:45:18 GMT; path=/; domain=.propublica.org; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -114,7 +114,7 @@ http_interactions:
       Cf-Cache-Status:
       - HIT
       Age:
-      - '993'
+      - '7997'
       Alt-Svc:
       - h3-23=":443"; ma=86400
       Expect-Ct:
@@ -122,7 +122,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 537d26392ef0cec0-IAD
+      - 537dd13b1eb4cf44-IAD
     body:
       encoding: ASCII-8BIT
       string: '{"organization":{"id":311124220,"ein":311124220,"name":"RURAL ACTION
@@ -131,5 +131,5 @@ http_interactions:
         Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
         Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
     http_version: 
-  recorded_at: Mon, 18 Nov 2019 21:48:34 GMT
+  recorded_at: Mon, 18 Nov 2019 23:45:18 GMT
 recorded_with: VCR 4.0.0

@@ -68,6 +68,19 @@ class Propublica::NonprofitsTest < Minitest::Test
     end
   end
 
+  def test_it_searchs_multiple_nonprofits_with_state_limiter
+    VCR.use_cassette("athens_search_limit_ohio_multiple_pages_fetching_all") do
+      ohio_results = Propublica::Nonprofits.search("athens", state: "OH", fetch_all: true)
+
+      assert_instance_of Enumerator::Lazy, ohio_results
+      assert_equal 330, ohio_results.size
+
+      ohio_results.each do |org|
+        assert_instance_of Propublica::Nonprofits::Organization, org
+      end
+    end
+  end
+
   def test_it_finds_organization_attribues_by_ein
     VCR.use_cassette("rural_action_ein") do
       rural_action = Propublica::Nonprofits.find_attributes(311124220)

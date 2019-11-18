@@ -1,0 +1,752 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://projects.propublica.org/nonprofits/api/v2/search.json?page=0&q=athens&state%5Bid%5D=OH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Nov 2019 23:45:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d969ec5cc4305df593ccb56e0b396fb801574120719; expires=Tue, 17-Nov-20
+        23:45:19 GMT; path=/; domain=.propublica.org; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept,Accept-Encoding,Content-Type
+      Cache-Control:
+      - public, max-age=86400, s-maxage=31536000, stale-while-revalidate=600, stale-if-error=600
+      Etag:
+      - W/"2b5636c97e78fe1447675ea6a5554622"
+      X-Request-Id:
+      - bd9db127-cc2c-433d-8cae-be050efc5d65
+      X-Runtime:
+      - '0.140836'
+      Cf-Cache-Status:
+      - MISS
+      Alt-Svc:
+      - h3-23=":443"; ma=86400
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 537dd13e7916f11a-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_results":330,"organizations":[{"ein":320035073,"strein":"32-0035073","name":"ATHENS
+        CONSERVANCY","sub_name":"ATHENS CONSERVANCY","city":"ATHENS","state":"OH","ntee_code":"C27","raw_ntee_code":"C27","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":7347.2305},{"ein":311005016,"strein":"31-1005016","name":"ATHENS
+        FELLOWSHIP","sub_name":"ATHENS FELLOWSHIP","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":7347.2305},{"ein":274932848,"strein":"27-4932848","name":"ATHENS
+        PHOTOGRAPHIC PROJECT","sub_name":"ATHENS PHOTOGRAPHIC PROJECT","city":"ATHENS","state":"OH","ntee_code":"A40","raw_ntee_code":"A40","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6606.619},{"ein":841673810,"strein":"84-1673810","name":"THE
+        ROCK ATHENS","sub_name":"THE ROCK ATHENS","city":"ATHENS","state":"OH","ntee_code":"X20","raw_ntee_code":"X20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6606.619},{"ein":310893703,"strein":"31-0893703","name":"ATHENS
+        BIBLE CHURCH","sub_name":"ATHENS BIBLE CHURCH","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6582.3604},{"ein":316162956,"strein":"31-6162956","name":"ATHENS
+        EDUCATION ASSOCIATION","sub_name":"ATHENS EDUCATION ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6582.3604},{"ein":311040215,"strein":"31-1040215","name":"ATHENS
+        FOUNDATION INCORPORATION","sub_name":"ATHENS FOUNDATION INCORPORATION","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6582.3604},{"ein":474985811,"strein":"47-4985811","name":"ATHENS
+        KOREAN SCHOOL","sub_name":"ATHENS KOREAN SCHOOL","city":"ATHENS","state":"OH","ntee_code":"B90","raw_ntee_code":"B90","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6582.3604},{"ein":311765073,"strein":"31-1765073","name":"ATHENS
+        FARMERS MARKET","sub_name":"ATHENS FARMERS MARKET","city":"ATHENS","state":"OH","ntee_code":"S41","raw_ntee_code":"S41","subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6546.3076},{"ein":474097101,"strein":"47-4097101","name":"ATHENS
+        FOOD RESCUE","sub_name":"ATHENS FOOD RESCUE","city":"ATHENS","state":"OH","ntee_code":"K30","raw_ntee_code":"K30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6546.3076},{"ein":813866302,"strein":"81-3866302","name":"CLIMB
+        ATHENS LLC","sub_name":"CLIMB ATHENS LLC ","city":"ATHENS","state":"OH","ntee_code":"N50","raw_ntee_code":"N50","subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6546.3076},{"ein":314119125,"strein":"31-4119125","name":"ATHENS
+        CEMETERY ASSN","sub_name":"ATHENS CEMETERY ASSN","city":"ATHENS","state":"OH","ntee_code":"Y50","raw_ntee_code":"Y50","subseccd":13,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":6525.803},{"ein":943479354,"strein":"94-3479354","name":"ATHENS
+        VILLAGE INC","sub_name":"ATHENS VILLAGE INC","city":"ATHENS","state":"OH","ntee_code":"P80","raw_ntee_code":"P80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6525.803},{"ein":311600581,"strein":"31-1600581","name":"ATHENS
+        ROTARY FOUNDATION","sub_name":"ATHENS ROTARY FOUNDATION","city":"ATHENS","state":"OH","ntee_code":"B82","raw_ntee_code":"B82","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6487.026},{"ein":311298059,"strein":"31-1298059","name":"ATHENS
+        SCHOOL BAND BOOSTERS CLUB OF ATHENS OHIO INC","sub_name":"ATHENS SCHOOL BAND
+        BOOSTERS CLUB OF ATHENS OHIO INC","city":"ATHENS","state":"OH","ntee_code":"A116","raw_ntee_code":"A116","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6024.668},{"ein":311358816,"strein":"31-1358816","name":"ATHENS
+        AREA MEDIATION SERVICE","sub_name":"ATHENS AREA MEDIATION SERVICE","city":"ATHENS","state":"OH","ntee_code":"Z99Z","raw_ntee_code":"Z99Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5961.7817},{"ein":311082318,"strein":"31-1082318","name":"ATHENS
+        CHURCH OF CHRIST","sub_name":"ATHENS CHURCH OF CHRIST","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5961.7817},{"ein":341313139,"strein":"34-1313139","name":"ATHENS
+        COUNTY FOOD PANTRY","sub_name":"ATHENS COUNTY FOOD PANTRY","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5961.7817},{"ein":311012784,"strein":"31-1012784","name":"FIRST
+        BAPTIST CHURCH ATHENS","sub_name":"FIRST BAPTIST CHURCH ATHENS ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5961.7817},{"ein":261466594,"strein":"26-1466594","name":"GREATER
+        ATHENS SOCCER ASSOCIATION","sub_name":"GREATER ATHENS SOCCER ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":"N64","raw_ntee_code":"N64","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5961.7817},{"ein":310746953,"strein":"31-0746953","name":"ATHENS
+        AERO CLUB INC","sub_name":"ATHENS AERO CLUB INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5929.9897},{"ein":463833890,"strein":"46-3833890","name":"ATHENS
+        COUNTY COMMUNITY SINGERS","sub_name":"ATHENS COUNTY COMMUNITY SINGERS","city":"ATHENS","state":"OH","ntee_code":"A6C","raw_ntee_code":"A6C","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5929.9897},{"ein":316045298,"strein":"31-6045298","name":"ATHENS
+        COUNTY HUMANE SOCIETY","sub_name":"ATHENS COUNTY HUMANE SOCIETY","city":"ATHENS","state":"OH","ntee_code":"D200","raw_ntee_code":"D200","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5929.9897},{"ein":311338245,"strein":"31-1338245","name":"ATHENS
+        HOCKEY ASSOCIATION INC","sub_name":"ATHENS HOCKEY ASSOCIATION INC","city":"ATHENS","state":"OH","ntee_code":"O99","raw_ntee_code":"O99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5929.9897},{"ein":314119310,"strein":"31-4119310","name":"ATHENS
+        MASONIC TEMPLE COMPANY","sub_name":"ATHENS MASONIC TEMPLE COMPANY","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":2,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5929.9897},{"ein":237099743,"strein":"23-7099743","name":"ATHENS
+        MENTAL HEALTH INC","sub_name":"ATHENS MENTAL HEALTH INC","city":"ATHENS","state":"OH","ntee_code":"F80Z","raw_ntee_code":"F80Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5929.9897},{"ein":202088117,"strein":"20-2088117","name":"ATHENS
+        YOUTH BASEBALL ORGANIZATION","sub_name":"ATHENS YOUTH BASEBALL ORGANIZATION","city":"ATHENS","state":"OH","ntee_code":"N63","raw_ntee_code":"N63","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5929.9897},{"ein":473503338,"strein":"47-3503338","name":"TEAM
+        ATHENS CYCLING INC","sub_name":"TEAM ATHENS CYCLING INC","city":"ATHENS","state":"OH","ntee_code":"N70","raw_ntee_code":"N70","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5929.9897},{"ein":464930509,"strein":"46-4930509","name":"US
+        VETERANS MC - ATHENS","sub_name":"US VETERANS MC - ATHENS","city":"ATHENS","state":"OH","ntee_code":"W30","raw_ntee_code":"W30","subseccd":19,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5929.9897},{"ein":310894177,"strein":"31-0894177","name":"ATHENS
+        FRIENDS AND NEWCOMERS","sub_name":"ATHENS FRIENDS AND NEWCOMERS","city":"THE
+        PLAINS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5910.6226},{"ein":300267539,"strein":"30-0267539","name":"ATHENS
+        SUNRISE ROTARY FOUNDATION","sub_name":"ATHENS SUNRISE ROTARY FOUNDATION","city":"ATHENS","state":"OH","ntee_code":"T31","raw_ntee_code":"T31","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5910.6226},{"ein":311418077,"strein":"31-1418077","name":"POUND
+        RESCUE OF ATHENS","sub_name":"POUND RESCUE OF ATHENS","city":"ATHENS","state":"OH","ntee_code":"O20","raw_ntee_code":"O20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5910.6226},{"ein":320164789,"strein":"32-0164789","name":"ATHENS
+        COMMUNITY TELEVISION INC","sub_name":"ATHENS COMMUNITY TELEVISION INC","city":"ATHENS","state":"OH","ntee_code":"A32","raw_ntee_code":"A32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5875.742},{"ein":460827988,"strein":"46-0827988","name":"ATHENS
+        OHIO KI-AIKIDO","sub_name":"ATHENS OHIO KI-AIKIDO ","city":"ATHENS","state":"OH","ntee_code":"B90","raw_ntee_code":"B90","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5875.742},{"ein":202148905,"strein":"20-2148905","name":"HOPE
+        RADIO OF ATHENS","sub_name":"HOPE RADIO OF ATHENS","city":"ATHENS","state":"OH","ntee_code":"A70","raw_ntee_code":"A70","subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":5875.742},{"ein":831145322,"strein":"83-1145322","name":"PLEDGE
+        - ATHENS COUNTY OHIO","sub_name":"PLEDGE - ATHENS COUNTY OHIO","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5875.742},{"ein":311160326,"strein":"31-1160326","name":"ATHENS
+        COUNTY AMATEUR RADIO ASSOCIATION","sub_name":"ATHENS COUNTY AMATEUR RADIO
+        ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":"A34","raw_ntee_code":"A34","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5469.016},{"ein":311329495,"strein":"31-1329495","name":"ATHENS
+        COUNTY DARE FOUNDATION INC","sub_name":"ATHENS COUNTY DARE FOUNDATION INC","city":"THE
+        PLAINS","state":"OH","ntee_code":"P20Z","raw_ntee_code":"P20Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5469.016},{"ein":310981970,"strein":"31-0981970","name":"FRIENDS
+        OF ATHENS PUBLIC LIBRARY","sub_name":"FRIENDS OF ATHENS PUBLIC LIBRARY","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5469.016},{"ein":341318473,"strein":"34-1318473","name":"THE
+        NEW ATHENS FIRE COMPANY","sub_name":"THE NEW ATHENS FIRE COMPANY","city":"NEW
+        ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5469.016},{"ein":311115809,"strein":"31-1115809","name":"ATHENS
+        COUNTY BOARD OF REALTORS","sub_name":"ATHENS COUNTY BOARD OF REALTORS","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5448.185},{"ein":263642377,"strein":"26-3642377","name":"ATHENS
+        COUNTY ECONOMIC DEVELOPMENT COUNCIL","sub_name":"ATHENS COUNTY ECONOMIC DEVELOPMENT
+        COUNCIL","city":"ATHENS","state":"OH","ntee_code":"S30","raw_ntee_code":"S30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5419.7827},{"ein":316050566,"strein":"31-6050566","name":"ATHENS
+        COUNTY FARM BUREAU INC","sub_name":"ATHENS COUNTY FARM BUREAU INC","city":"JACKSON","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5419.7827},{"ein":314119160,"strein":"31-4119160","name":"ATHENS
+        GOLF AND COUNTRY CLUB","sub_name":"ATHENS GOLF AND COUNTRY CLUB","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5419.7827},{"ein":310718322,"strein":"31-0718322","name":"HOCKING-ATHENS
+        PERRY COMMUNITY ACTION","sub_name":"HOCKING-ATHENS PERRY COMMUNITY ACTION","city":"GLOUSTER","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5419.7827},{"ein":310670449,"strein":"31-0670449","name":"ATHENS
+        AREA CHAMBER OF COMMERCE","sub_name":"ATHENS AREA CHAMBER OF COMMERCE","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5401.483},{"ein":310896716,"strein":"31-0896716","name":"ATHENS
+        COUNTY FOSTER PARENT ASSN","sub_name":"ATHENS COUNTY FOSTER PARENT ASSN ","city":"ATHENS","state":"OH","ntee_code":"P32","raw_ntee_code":"P32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5401.483},{"ein":237076239,"strein":"23-7076239","name":"ATHENS
+        HIGH SCHOOL CENTURY CLUB","sub_name":"ATHENS HIGH SCHOOL CENTURY CLUB","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5369.7905},{"ein":316077215,"strein":"31-6077215","name":"ATHENS
+        LADIES ELK AUXILIARY ALEA","sub_name":"ATHENS LADIES ELK AUXILIARY ALEA","city":"ATHENS","state":"OH","ntee_code":"P20","raw_ntee_code":"P20","subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5369.7905},{"ein":331052034,"strein":"33-1052034","name":"ATHENS
+        NEAR NORTHSIDE NEIGHBORHOOD ASSOCIATION","sub_name":"ATHENS NEAR NORTHSIDE
+        NEIGHBORHOOD ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":"S22","raw_ntee_code":"S22","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5369.7905},{"ein":316379707,"strein":"31-6379707","name":"DOWNTOWN
+        ATHENS KIWANIS SCHOLARSHIP TRUST FUND","sub_name":"DOWNTOWN ATHENS KIWANIS
+        SCHOLARSHIP TRUST FUND","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5035.543},{"ein":311007617,"strein":"31-1007617","name":"UNITED
+        SENIORS OF ATHENS COUNTY INC","sub_name":"UNITED SENIORS OF ATHENS COUNTY
+        INC","city":"ATHENS","state":"OH","ntee_code":"P810","raw_ntee_code":"P810","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5035.543},{"ein":263952287,"strein":"26-3952287","name":"ATHENS
+        BOAT AND SKI CLUB INC","sub_name":"ATHENS BOAT AND SKI CLUB INC","city":"LANCASTER","state":"OH","ntee_code":"N50","raw_ntee_code":"N50","subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5016.101},{"ein":202525219,"strein":"20-2525219","name":"ATHENS
+        COUNTY SHRINE CLUB HOLDING CORPORATION","sub_name":"ATHENS COUNTY SHRINE CLUB
+        HOLDING CORPORATION","city":"THE PLAINS","state":"OH","ntee_code":"S47","raw_ntee_code":"S47","subseccd":2,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5016.101},{"ein":311211391,"strein":"31-1211391","name":"COMMUNITY
+        IMPROVEMENT CORPORATION OF ATHENS OHIO","sub_name":"COMMUNITY IMPROVEMENT
+        CORPORATION OF ATHENS OHIO","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":5016.101},{"ein":800271530,"strein":"80-0271530","name":"ATHENS
+        COUNTY CHILD ADVOCACY CENTER INC","sub_name":"ATHENS COUNTY CHILD ADVOCACY
+        CENTER INC","city":"ATHENS","state":"OH","ntee_code":"I72","raw_ntee_code":"I72","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4990.4556},{"ein":311044073,"strein":"31-1044073","name":"ATHENS
+        COUNTY HISTORICAL SOCIETY \u0026 MUSEUM INC","sub_name":"ATHENS COUNTY HISTORICAL
+        SOCIETY \u0026 MUSEUM INC","city":"ATHENS","state":"OH","ntee_code":"A82Z","raw_ntee_code":"A82Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4990.4556},{"ein":201151625,"strein":"20-1151625","name":"ATHENS
+        ELKS LODGE 973 PER ASSOCIATION","sub_name":"ATHENS ELKS LODGE 973 PER ASSOCIATION
+        ","city":"ATHENS","state":"OH","ntee_code":"B82","raw_ntee_code":"B82","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4990.4556},{"ein":310932676,"strein":"31-0932676","name":"HOUSING
+        FOR ATHENS SENIOR RESIDENTS INC","sub_name":"HOUSING FOR ATHENS SENIOR RESIDENTS
+        INC","city":"ATHENS","state":"OH","ntee_code":"L22","raw_ntee_code":"L22","subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":4990.4556},{"ein":300044864,"strein":"30-0044864","name":"ATHENS
+        COUNTY AREA FIREFIGHTERS ASSOCIATION INC","sub_name":"ATHENS COUNTY AREA FIREFIGHTERS
+        ASSOCIATION INC","city":"ATHENS","state":"OH","ntee_code":"M240","raw_ntee_code":"M240","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4973.1416},{"ein":311227251,"strein":"31-1227251","name":"ATHENS-HOCKING
+        COUNTY RECYCLING CENTERS INC","sub_name":"ATHENS-HOCKING COUNTY RECYCLING
+        CENTERS INC","city":"ATHENS","state":"OH","ntee_code":"C270","raw_ntee_code":"C270","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4973.1416},{"ein":341681592,"strein":"34-1681592","name":"FRANKLIN
+        MUSEUM OF NEW ATHENS INC","sub_name":"FRANKLIN MUSEUM OF NEW ATHENS INC","city":"NEW
+        ATHENS","state":"OH","ntee_code":"A540","raw_ntee_code":"A540","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4944.104},{"ein":311161912,"strein":"31-1161912","name":"PREGNANCY
+        RESOURCE CENTER OF ATHENS COUNTY","sub_name":"PREGNANCY RESOURCE CENTER OF
+        ATHENS COUNTY","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4944.104},{"ein":311077345,"strein":"31-1077345","name":"ATHENS
+        COUNTY CONVENTION AND VISITORS BUREAU INC","sub_name":"ATHENS COUNTY CONVENTION
+        AND VISITORS BUREAU INC","city":"ATHENS","state":"OH","ntee_code":"S41","raw_ntee_code":"S41","subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4665.7715},{"ein":311543181,"strein":"31-1543181","name":"NATIONAL
+        ALLIANCE FOR THE MENTALLY ILL ATHENS","sub_name":"NATIONAL ALLIANCE FOR THE
+        MENTALLY ILL ATHENS ","city":"ATHENS","state":"OH","ntee_code":"P80","raw_ntee_code":"P80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4647.5513},{"ein":311168965,"strein":"31-1168965","name":"J
+        WARREN MCCLURE ATHENS EDUCATION FOUNDATION INC","sub_name":"J WARREN MCCLURE
+        ATHENS EDUCATION FOUNDATION INC","city":"THE PLAINS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4624.1885},{"ein":311358127,"strein":"31-1358127","name":"UNITED
+        CHURCH RESIDENCES OF ATHENS GEORGIA INC","sub_name":"UNITED CHURCH RESIDENCES
+        OF ATHENS GEORGIA INC","city":"MARION","state":"OH","ntee_code":"L210","raw_ntee_code":"L210","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4607.7783},{"ein":314424936,"strein":"31-4424936","name":"UNITED
+        APPEAL FOR ATHENS COUNTY OHIO INC","sub_name":"UNITED APPEAL FOR ATHENS COUNTY
+        OHIO INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4580.9873},{"ein":311085095,"strein":"31-1085095","name":"CRIME
+        SOLVERS ANONYMOUS OF ATHENS COUNTY OHIO INC","sub_name":"CRIME SOLVERS ANONYMOUS
+        OF ATHENS COUNTY OHIO INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4308.038},{"ein":263540151,"strein":"26-3540151","name":"DISASTER
+        ANIMAL RESPONSE TEAM OF ATHENS COUNTY INC","sub_name":"DISASTER ANIMAL RESPONSE
+        TEAM OF ATHENS COUNTY INC","city":"NEW STRAITSVL","state":"OH","ntee_code":"M20","raw_ntee_code":"M20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4292.456},{"ein":900128951,"strein":"90-0128951","name":"ATHENS
+        COMMUNITY CHURCH OF THE CHRISTIAN AND MISSIONARY ALLIANCE","sub_name":"ATHENS
+        COMMUNITY CHURCH OF THE CHRISTIAN AND MISSIONARY ALLIANCE","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4068.3647},{"ein":300655045,"strein":"30-0655045","name":"ANCIENT
+        ORDER OF HIBERNIANS LADIES OH ATHENS DIV 1","sub_name":"ANCIENT ORDER OF HIBERNIANS
+        LADIES OH ATHENS DIV 1","city":"LAKEWOOD","state":"OH","ntee_code":"Y42","raw_ntee_code":"Y42","subseccd":10,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4052.187},{"ein":300175579,"strein":"30-0175579","name":"ATHENS
+        COUNTY COURT APPOINTED SPECIAL ADVOCATES GUARDIANS AD LIT","sub_name":"ATHENS
+        COUNTY COURT APPOINTED SPECIAL ADVOCATES GUARDIANS AD LIT","city":"ATHENS","state":"OH","ntee_code":"I80","raw_ntee_code":"I80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4017.5525},{"ein":311388687,"strein":"31-1388687","name":"ATHENS
+        COUNTY SCHOOLS EMP HEALTH \u0026 WELFARE BENEFIT FUND \u0026 TR FOR","sub_name":"ATHENS
+        COUNTY SCHOOLS EMP HEALTH \u0026 WELFARE BENEFIT FUND \u0026 TR FOR","city":"CHAUNCEY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":9,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":3823.613},{"ein":311459924,"strein":"31-1459924","name":"LA
+        SOCIETE DES QUARANTE HOMMES ET HUIT CHEVAUX ATHENS COUNT VOITURE","sub_name":"LA
+        SOCIETE DES QUARANTE HOMMES ET HUIT CHEVAUX ATHENS COUNT VOITURE ","city":"ATHENS","state":"OH","ntee_code":"B82","raw_ntee_code":"B82","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":3540.9905},{"ein":341785982,"strein":"34-1785982","name":"MEDICAL
+        PLAN TR FBO ATHENS CTY SCHL EMPLEES HLTH \u0026 WLFARE BENEFIT FUND","sub_name":"MEDICAL
+        PLAN TR FBO ATHENS CTY SCHL EMPLEES HLTH \u0026 WLFARE BENEFIT FUND","city":"CHAUNCEY","state":"OH","ntee_code":"Y44","raw_ntee_code":"Y44","subseccd":9,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":3413.023},{"ein":542076952,"strein":"54-2076952","name":"ALPHA
+        CHI SIGMA FRATERNITY COLLIGIATE CHAPTER","sub_name":"ALPHA CHI SIGMA FRATERNITY
+        COLLIGIATE CHAPTER ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":237070735,"strein":"23-7070735","name":"ALPHA
+        PHI OMEGA","sub_name":"ALPHA PHI OMEGA ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":546053067,"strein":"54-6053067","name":"ALPHA
+        PI MU ASSOCIATION","sub_name":"ALPHA PI MU ASSOCIATION ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":311241762,"strein":"31-1241762","name":"AMERICAN
+        GUILD OF ORGANISTS AGO","sub_name":"AMERICAN GUILD OF ORGANISTS AGO ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":314370355,"strein":"31-4370355","name":"AMERICAN
+        LEGION","sub_name":"AMERICAN LEGION ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":19,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":462764560,"strein":"46-2764560","name":"AMVETS","sub_name":"AMVETS
+        ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":19,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":223012306,"strein":"22-3012306","name":"ASSOCIATION
+        FOR COMPUTING MACHINERY","sub_name":"ASSOCIATION FOR COMPUTING MACHINERY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":562467244,"strein":"56-2467244","name":"BIRTH
+        CIRCLE INC","sub_name":"BIRTH CIRCLE INC","city":"ATHENS","state":"OH","ntee_code":"E42","raw_ntee_code":"E42","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":452439814,"strein":"45-2439814","name":"BREVITY
+        MAGAZINE","sub_name":"BREVITY MAGAZINE","city":"ATHENS","state":"OH","ntee_code":"A33","raw_ntee_code":"A33","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":311571204,"strein":"31-1571204","name":"BUCKEYE
+        HOUSE RABBIT SOCIETY","sub_name":"BUCKEYE HOUSE RABBIT SOCIETY","city":"ATHENS","state":"OH","ntee_code":"D20","raw_ntee_code":"D20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":311247232,"strein":"31-1247232","name":"CENTER
+        FOR DIVORCE EDUCATION INC","sub_name":"CENTER FOR DIVORCE EDUCATION INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":310945939,"strein":"31-0945939","name":"DAIRY
+        BARN INC SOUTHEASTERN OHIO CULTURAL ARTS CENTER","sub_name":"DAIRY BARN INC
+        SOUTHEASTERN OHIO CULTURAL ARTS CENTER","city":"ATHENS","state":"OH","ntee_code":"A200","raw_ntee_code":"A200","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":454941712,"strein":"45-4941712","name":"FRIENDS
+        OF THE SHELTER DOGS INC","sub_name":"FRIENDS OF THE SHELTER DOGS INC","city":"ATHENS","state":"OH","ntee_code":"D20","raw_ntee_code":"D20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":611769901,"strein":"61-1769901","name":"GAMMA
+        PHI BETA SORORITY INC","sub_name":"GAMMA PHI BETA SORORITY INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":651284790,"strein":"65-1284790","name":"GLOBAL
+        GYMNASTICS TEAM BOOSTERS INC","sub_name":"GLOBAL GYMNASTICS TEAM BOOSTERS
+        INC","city":"ATHENS","state":"OH","ntee_code":"N60","raw_ntee_code":"N60","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":311119704,"strein":"31-1119704","name":"GOOD
+        WORKS INC","sub_name":"GOOD WORKS INC","city":"ATHENS","state":"OH","ntee_code":"L41Z","raw_ntee_code":"L41Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":311704731,"strein":"31-1704731","name":"GREATER
+        CINCINNATI CHRISTIAN CENTER","sub_name":"GREATER CINCINNATI CHRISTIAN CENTER","city":"ATHENS","state":"OH","ntee_code":"X20","raw_ntee_code":"X20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":310943533,"strein":"31-0943533","name":"GREEN
+        \u0026 WHITE CLUB","sub_name":"GREEN \u0026 WHITE CLUB","city":"ATHENS","state":"OH","ntee_code":"N50","raw_ntee_code":"N50","subseccd":4,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.56448},{"ein":474612970,"strein":"47-4612970","name":"HEROES
+        INTERNATIONAL","sub_name":"HEROES INTERNATIONAL","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":521758797,"strein":"52-1758797","name":"HILLEL
+        THE FOUNDATION FOR JEWISH CAMPUS LIFE","sub_name":"HILLEL THE FOUNDATION FOR
+        JEWISH CAMPUS LIFE ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":311472366,"strein":"31-1472366","name":"INTEGRATED
+        SERVICES FOR BEHAVIORAL HEALTH","sub_name":"INTEGRATED SERVICES FOR BEHAVIORAL
+        HEALTH","city":"ATHENS","state":"OH","ntee_code":"P30","raw_ntee_code":"P30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":316065893,"strein":"31-6065893","name":"LEAGUE
+        OF WOMEN VOTERS OF OHIO","sub_name":"LEAGUE OF WOMEN VOTERS OF OHIO ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":201622770,"strein":"20-1622770","name":"MIDLAND
+        KI FEDERATION","sub_name":"MIDLAND KI FEDERATION","city":"ATHENS","state":"OH","ntee_code":"B99","raw_ntee_code":"B99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":300488538,"strein":"30-0488538","name":"OHIO
+        CHINESE AMERICAN PROFESSIONAL ASSOCIATION","sub_name":"OHIO CHINESE AMERICAN
+        PROFESSIONAL ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":"A23","raw_ntee_code":"A23","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448}],"num_pages":4,"cur_page":0,"page_offset":0,"per_page":100,"search_query":"athens","selected_state":"OH","selected_ntee":null,"selected_code":null,"data_source":"ProPublica
+        Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
+        Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
+        Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
+    http_version: 
+  recorded_at: Mon, 18 Nov 2019 23:45:19 GMT
+- request:
+    method: get
+    uri: https://projects.propublica.org/nonprofits/api/v2/search.json?page=1&q=athens&state%5Bid%5D=OH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Nov 2019 23:45:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd18ee1ad2103e25958470585c6ba0b8d1574120719; expires=Tue, 17-Nov-20
+        23:45:19 GMT; path=/; domain=.propublica.org; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept,Accept-Encoding,Content-Type
+      Cache-Control:
+      - public, max-age=86400, s-maxage=31536000, stale-while-revalidate=600, stale-if-error=600
+      Etag:
+      - W/"3977a71115d710d402ef73cd352c4766"
+      X-Request-Id:
+      - '04694faf-0fd1-43a0-a6d1-aeec26278810'
+      X-Runtime:
+      - '0.210127'
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '8276'
+      Alt-Svc:
+      - h3-23=":443"; ma=86400
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 537dd140bdc3cf08-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_results":330,"organizations":[{"ein":462408298,"strein":"46-2408298","name":"OHIO
+        PINK RIBBON FUND","sub_name":"OHIO PINK RIBBON FUND","city":"ATHENS","state":"OH","ntee_code":"E86","raw_ntee_code":"E86","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":311446120,"strein":"31-1446120","name":"OHIO
+        STATE GRANGE OF PATRONS OF HUSBANDRY","sub_name":"OHIO STATE GRANGE OF PATRONS
+        OF HUSBANDRY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":113796014,"strein":"11-3796014","name":"PROM
+        PLEDGE IMPACT INC","sub_name":"PROM PLEDGE IMPACT INC","city":"ATHENS","state":"OH","ntee_code":"I21","raw_ntee_code":"I21","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":311074080,"strein":"31-1074080","name":"REACH
+        OUT ON CAMPUS INC","sub_name":"REACH OUT ON CAMPUS INC","city":"ATHENS","state":"OH","ntee_code":"Z99Z","raw_ntee_code":"Z99Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":237169882,"strein":"23-7169882","name":"ROYAL
+        ARCH MASONS OF OHIO","sub_name":"ROYAL ARCH MASONS OF OHIO ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":8,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":800967904,"strein":"80-0967904","name":"SHELTERING
+        ARMS FOUNDATION INC","sub_name":"SHELTERING ARMS FOUNDATION INC","city":"ATHENS","state":"OH","ntee_code":"E70","raw_ntee_code":"E70","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":311184053,"strein":"31-1184053","name":"SOUTHEAST
+        OHIO YOUTH MENTORING INC","sub_name":"SOUTHEAST OHIO YOUTH MENTORING INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":275427956,"strein":"27-5427956","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":352411137,"strein":"35-2411137","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":823706836,"strein":"82-3706836","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":"O52","raw_ntee_code":"O52","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":901073066,"strein":"90-1073066","name":"TOASTMASTERS
+        INTERNATIONAL","sub_name":"TOASTMASTERS INTERNATIONAL ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.56448},{"ein":901181997,"strein":"90-1181997","name":"TOASTMASTERS
+        INTERNATIONAL","sub_name":"TOASTMASTERS INTERNATIONAL ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":311390024,"strein":"31-1390024","name":"ULTIMATE
+        RECYCLING CENTER","sub_name":"ULTIMATE RECYCLING CENTER","city":"ATHENS","state":"OH","ntee_code":"C270","raw_ntee_code":"C270","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":310746405,"strein":"31-0746405","name":"UNITED
+        CAMPUS MINISTRY","sub_name":"UNITED CAMPUS MINISTRY","city":"ATHENS","state":"OH","ntee_code":"X20Z","raw_ntee_code":"X20Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":310925968,"strein":"31-0925968","name":"UNIVERSITY
+        MEDICAL ASSOCIATES INC","sub_name":"UNIVERSITY MEDICAL ASSOCIATES INC","city":"ATHENS","state":"OH","ntee_code":"E600","raw_ntee_code":"E600","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":464569454,"strein":"46-4569454","name":"WINDY
+        HILLS FARM THERAPEUTIC RIDING CENTER","sub_name":"WINDY HILLS FARM THERAPEUTIC
+        RIDING CENTER","city":"ATHENS","state":"OH","ntee_code":"N69","raw_ntee_code":"N69","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":611814088,"strein":"61-1814088","name":"WOMEN
+        FOR RECOVERY","sub_name":"WOMEN FOR RECOVERY","city":"ATHENS","state":"OH","ntee_code":"P72","raw_ntee_code":"P72","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.56448},{"ein":316040060,"strein":"31-6040060","name":"673
+        OHIO UNIVERSITY CREDIT UNION INC","sub_name":"673 OHIO UNIVERSITY CREDIT UNION
+        INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":14,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311688567,"strein":"31-1688567","name":"ACENET
+        VENTURES INC","sub_name":"ACENET VENTURES INC","city":"ATHENS","state":"OH","ntee_code":"S310","raw_ntee_code":"S310","subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.50499},{"ein":316052835,"strein":"31-6052835","name":"ALPHA
+        DELTA PI HOUSE CORPORATION","sub_name":"ALPHA DELTA PI HOUSE CORPORATION ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":2,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":310939743,"strein":"31-0939743","name":"ALPHA
+        EPSILON PI FRATERNITY","sub_name":"ALPHA EPSILON PI FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311482061,"strein":"31-1482061","name":"ALPHA
+        KAPPA PSI FRATERNITY","sub_name":"ALPHA KAPPA PSI FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311129632,"strein":"31-1129632","name":"APPALACHIAN
+        CENTER FOR ECONOMIC NETWORKS INC","sub_name":"APPALACHIAN CENTER FOR ECONOMIC
+        NETWORKS INC ","city":"ATHENS","state":"OH","ntee_code":"S32Z","raw_ntee_code":"S32Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311398572,"strein":"31-1398572","name":"APPALACHIAN
+        PEACE AND JUSTICE NETWORK","sub_name":"APPALACHIAN PEACE AND JUSTICE NETWORK","city":"ATHENS","state":"OH","ntee_code":"Q40Z","raw_ntee_code":"Q40Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":833420924,"strein":"83-3420924","name":"APPALACHIAN
+        WILDLIFE RESEARCH INSTITUTE INC","sub_name":"APPALACHIAN WILDLIFE RESEARCH
+        INSTITUTE INC","city":"ATHENS","state":"OH","ntee_code":"D30","raw_ntee_code":"D30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":204984947,"strein":"20-4984947","name":"ASSOCIATION
+        OF OHIO MUSICTHERAPISTS","sub_name":"ASSOCIATION OF OHIO MUSICTHERAPISTS","city":"ATHENS","state":"OH","ntee_code":"B90","raw_ntee_code":"B90","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":310789329,"strein":"31-0789329","name":"ATCO
+        INC","sub_name":"ATCO INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":201655134,"strein":"20-1655134","name":"BANNER
+        OF TRUTH MINISTRIES","sub_name":"BANNER OF TRUTH MINISTRIES","city":"ATHENS","state":"OH","ntee_code":"X20","raw_ntee_code":"X20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":800917214,"strein":"80-0917214","name":"BETA
+        KAPPA HOUSE COMPANY","sub_name":"BETA KAPPA HOUSE COMPANY","city":"ATHENS","state":"OH","ntee_code":"N50","raw_ntee_code":"N50","subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311664602,"strein":"31-1664602","name":"BLUELINE
+        BOOSTER CLUB INC","sub_name":"BLUELINE BOOSTER CLUB INC","city":"ATHENS","state":"OH","ntee_code":"B11","raw_ntee_code":"B11","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":800206741,"strein":"80-0206741","name":"BRICK
+        MONKEY THEATER ENSEMBLE","sub_name":"BRICK MONKEY THEATER ENSEMBLE","city":"ATHENS","state":"OH","ntee_code":"A65","raw_ntee_code":"A65","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":20577858,"strein":"02-0577858","name":"CAMP
+        HERITAGE INC","sub_name":"CAMP HERITAGE INC","city":"ATHENS","state":"OH","ntee_code":"B99","raw_ntee_code":"B99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":475330402,"strein":"47-5330402","name":"DELTA
+        TAU DELTA FRATERNITY","sub_name":"DELTA TAU DELTA FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":161707597,"strein":"16-1707597","name":"EAST
+        ELEMENTARY PTO","sub_name":"EAST ELEMENTARY PTO","city":"ATHENS","state":"OH","ntee_code":"B94","raw_ntee_code":"B94","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":310929900,"strein":"31-0929900","name":"EDNA
+        BROOKS FOUNDATION INC","sub_name":"EDNA BROOKS FOUNDATION INC ","city":"ATHENS","state":"OH","ntee_code":"P43Z","raw_ntee_code":"P43Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311078190,"strein":"31-1078190","name":"FEDERAL-HOCKING
+        TEACHERS ASSOCIATION","sub_name":"FEDERAL-HOCKING TEACHERS ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":"Y33","raw_ntee_code":"Y33","subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":510546605,"strein":"51-0546605","name":"FUTURE
+        FARMERS OF AMERICA STATE ASSOCIATIONS \u0026 LOCAL CHAPTER","sub_name":"FUTURE
+        FARMERS OF AMERICA STATE ASSOCIATIONS \u0026 LOCAL CHAPTER ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311365597,"strein":"31-1365597","name":"GRACE
+        CHRISTIAN CENTER INC","sub_name":"GRACE CHRISTIAN CENTER INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":451155054,"strein":"45-1155054","name":"GREAT
+        COMMISSION TEAM","sub_name":"GREAT COMMISSION TEAM","city":"ATHENS","state":"OH","ntee_code":"X20","raw_ntee_code":"X20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":465011827,"strein":"46-5011827","name":"GREAT
+        LAKES SUMMER COLLEGIATE BASEBALL FOUNDATION","sub_name":"GREAT LAKES SUMMER
+        COLLEGIATE BASEBALL FOUNDATION","city":"ATHENS","state":"OH","ntee_code":"N63","raw_ntee_code":"N63","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":272228470,"strein":"27-2228470","name":"HARRY
+        B CREWSON FOUNDATION INC","sub_name":"HARRY B CREWSON FOUNDATION INC","city":"ATHENS","state":"OH","ntee_code":"X99","raw_ntee_code":"X99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":310870694,"strein":"31-0870694","name":"HEALTH
+        RECOVERY SERVICES INC","sub_name":"HEALTH RECOVERY SERVICES INC","city":"ATHENS","state":"OH","ntee_code":"F34Z","raw_ntee_code":"F34Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311492331,"strein":"31-1492331","name":"HOCKING
+        RIVER COMMISSION INC","sub_name":"HOCKING RIVER COMMISSION INC","city":"ATHENS","state":"OH","ntee_code":"C32Z","raw_ntee_code":"C32Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":621784069,"strein":"62-1784069","name":"HONOR
+        SOCIETY OF PHI KAPPA PHI","sub_name":"HONOR SOCIETY OF PHI KAPPA PHI ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311691089,"strein":"31-1691089","name":"HOUSING
+        FOR OHIO INC","sub_name":"HOUSING FOR OHIO INC","city":"ATHENS","state":"OH","ntee_code":"L40","raw_ntee_code":"L40","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":760550328,"strein":"76-0550328","name":"KARDIA
+        FOUNDATION","sub_name":"KARDIA FOUNDATION","city":"ATHENS","state":"OH","ntee_code":"Q300","raw_ntee_code":"Q300","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":205899451,"strein":"20-5899451","name":"KARMA
+        TRIYANA DHARMACHAKRA INC","sub_name":"KARMA TRIYANA DHARMACHAKRA INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":50449913,"strein":"05-0449913","name":"LAST
+        CHANCE CORRAL","sub_name":"LAST CHANCE CORRAL","city":"ATHENS","state":"OH","ntee_code":"D200","raw_ntee_code":"D200","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":813523668,"strein":"81-3523668","name":"MOUNT
+        ZION BAPTIST CHURCH PRESERVATION SOCIETY","sub_name":"MOUNT ZION BAPTIST CHURCH
+        PRESERVATION SOCIETY","city":"ATHENS","state":"OH","ntee_code":"A80","raw_ntee_code":"A80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":833663621,"strein":"83-3663621","name":"MOUNTAIN
+        HEIGHTS CHURCH INC","sub_name":"MOUNTAIN HEIGHTS CHURCH INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":850457950,"strein":"85-0457950","name":"NATIONAL
+        NETWORK OF FOREST","sub_name":"NATIONAL NETWORK OF FOREST","city":"ATHENS","state":"OH","ntee_code":"S32","raw_ntee_code":"S32","subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.50499},{"ein":912119806,"strein":"91-2119806","name":"OHIO
+        ASSOCIATION FOR GIFTED CHILDREN","sub_name":"OHIO ASSOCIATION FOR GIFTED CHILDREN
+        ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.50499},{"ein":311270867,"strein":"31-1270867","name":"OHIO
+        REHABILITATION COUNSELING ASSOCIATION","sub_name":"OHIO REHABILITATION COUNSELING
+        ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311291261,"strein":"31-1291261","name":"OHIO
+        SPECIAL OLYMPICS INC","sub_name":"OHIO SPECIAL OLYMPICS INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":473890691,"strein":"47-3890691","name":"OHIO
+        VALLEY SCHOOL OF CELTIC DANCE AND CULTURE","sub_name":"OHIO VALLEY SCHOOL
+        OF CELTIC DANCE AND CULTURE","city":"ATHENS","state":"OH","ntee_code":"A6E","raw_ntee_code":"A6E","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":314280352,"strein":"31-4280352","name":"PI
+        BETA PHI FRATERNITY","sub_name":"PI BETA PHI FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":800652238,"strein":"80-0652238","name":"PI
+        KAPPA PHI FRATERNITY","sub_name":"PI KAPPA PHI FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":316049366,"strein":"31-6049366","name":"PSI
+        CHI THE NATIONAL HONOR SOCIETY IN PSYCHOLOGY","sub_name":"PSI CHI THE NATIONAL
+        HONOR SOCIETY IN PSYCHOLOGY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311082736,"strein":"31-1082736","name":"ROLLING
+        HILLS BAPTIST CHURCH","sub_name":"ROLLING HILLS BAPTIST CHURCH ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":300296169,"strein":"30-0296169","name":"SHADE
+        COMMUNITY CENTER ASSOCIATION","sub_name":"SHADE COMMUNITY CENTER ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":"N31","raw_ntee_code":"N31","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":474839320,"strein":"47-4839320","name":"SHELLEY
+        GAUTIER PARA-SPORT FOUNDATION","sub_name":"SHELLEY GAUTIER PARA-SPORT FOUNDATION","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":820934983,"strein":"82-0934983","name":"SOUTHEAST
+        OHIO LGBTQ CENTER","sub_name":"SOUTHEAST OHIO LGBTQ CENTER","city":"ATHENS","state":"OH","ntee_code":"R26","raw_ntee_code":"R26","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311140507,"strein":"31-1140507","name":"SOUTHEASTERN
+        OHIO JEWISH CEMETARY ASSOCIATION","sub_name":"SOUTHEASTERN OHIO JEWISH CEMETARY
+        ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":"Y50","raw_ntee_code":"Y50","subseccd":13,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":311291260,"strein":"31-1291260","name":"SPECIAL
+        OLYMPICS OHIO INC","sub_name":"SPECIAL OLYMPICS OHIO INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":316051132,"strein":"31-6051132","name":"TAU
+        BETA PI ASSOCIATION INC","sub_name":"TAU BETA PI ASSOCIATION INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":352407555,"strein":"35-2407555","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":453946391,"strein":"45-3946391","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":800401985,"strein":"80-0401985","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":201712588,"strein":"20-1712588","name":"TOASTMASTERS
+        INTERNATIONAL","sub_name":"TOASTMASTERS INTERNATIONAL ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":813102485,"strein":"81-3102485","name":"UNBROKEN
+        CIRCLE FUND","sub_name":"UNBROKEN CIRCLE FUND","city":"ATHENS","state":"OH","ntee_code":"N20","raw_ntee_code":"N20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":310885232,"strein":"31-0885232","name":"VETERANS
+        OF FOREIGN WARS OF THE UNITED STATES DEPARTMENT OF OHIO","sub_name":"VETERANS
+        OF FOREIGN WARS OF THE UNITED STATES DEPARTMENT OF OHIO ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":19,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.50499},{"ein":521650893,"strein":"52-1650893","name":"AMERICAN
+        FEDERATION OF STATE COUNTY \u0026 MUNICIPAL EMPLOYEES","sub_name":"AMERICAN
+        FEDERATION OF STATE COUNTY \u0026 MUNICIPAL EMPLOYEES ","city":"ATHENS","state":"OH","ntee_code":"J40","raw_ntee_code":"J40","subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":310838283,"strein":"31-0838283","name":"AMERICAN
+        FEDERATION OF STATE COUNTY \u0026 MUNICIPAL EMPLOYEES","sub_name":"AMERICAN
+        FEDERATION OF STATE COUNTY \u0026 MUNICIPAL EMPLOYEES ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":237400399,"strein":"23-7400399","name":"AMERICAN
+        INSTITUTE OF INDUSTRIAL ENGINEERS INC","sub_name":"AMERICAN INSTITUTE OF INDUSTRIAL
+        ENGINEERS INC","city":"ATHENS","state":"OH","ntee_code":"U42","raw_ntee_code":"U42","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":461500990,"strein":"46-1500990","name":"APPLACHIAN
+        FAMILY CENTER FOR AUSTIM \u0026 DISABILITY RESOURCES AND","sub_name":"APPLACHIAN
+        FAMILY CENTER FOR AUSTIM \u0026 DISABILITY RESOURCES AND","city":"ATHENS","state":"OH","ntee_code":"G84","raw_ntee_code":"G84","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":311777447,"strein":"31-1777447","name":"ATCO-BEACON
+        EDUCATION ASSOCIATION","sub_name":"ATCO-BEACON EDUCATION ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":"J40","raw_ntee_code":"J40","subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":562409074,"strein":"56-2409074","name":"AZAGUNO
+        INC","sub_name":"AZAGUNO INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":262523303,"strein":"26-2523303","name":"BULLDOG
+        BLITZ CORPORATION","sub_name":"BULLDOG BLITZ CORPORATION","city":"ATHENS","state":"OH","ntee_code":"N65","raw_ntee_code":"N65","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":201866978,"strein":"20-1866978","name":"COMMUNITY
+        ACTION OF APPALACHIAN OHIO","sub_name":"COMMUNITY ACTION OF APPALACHIAN OHIO","city":"ATHENS","state":"OH","ntee_code":"S21","raw_ntee_code":"S21","subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":311375388,"strein":"31-1375388","name":"COMMUNITY
+        FOOD INITIATIVES","sub_name":"COMMUNITY FOOD INITIATIVES","city":"ATHENS","state":"OH","ntee_code":"K99Z","raw_ntee_code":"K99Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":814805177,"strein":"81-4805177","name":"CORNWELL
+        FOUNDATION INC","sub_name":"CORNWELL FOUNDATION INC","city":"ATHENS","state":"OH","ntee_code":"T22","raw_ntee_code":"T22","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":310811788,"strein":"31-0811788","name":"CORPORATION
+        FOR OHIO APPALACHIAN DEVELOPMENT","sub_name":"CORPORATION FOR OHIO APPALACHIAN
+        DEVELOPMENT ","city":"ATHENS","state":"OH","ntee_code":"S200","raw_ntee_code":"S200","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":237090569,"strein":"23-7090569","name":"DELTA
+        KAPPA GAMMA SOCIETY","sub_name":"DELTA KAPPA GAMMA SOCIETY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":314386262,"strein":"31-4386262","name":"FIRST
+        CHRISTIAN CHURCH","sub_name":"FIRST CHRISTIAN CHURCH","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":314275295,"strein":"31-4275295","name":"FREE
+        \u0026 ACCEPTED MASONS OF OHIO","sub_name":"FREE \u0026 ACCEPTED MASONS OF
+        OHIO ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":10,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":261560491,"strein":"26-1560491","name":"FRIENDS
+        OF STROUDS RUN STATE PARK INC","sub_name":"FRIENDS OF STROUDS RUN STATE PARK
+        INC","city":"ATHENS","state":"OH","ntee_code":"N11","raw_ntee_code":"N11","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":311231341,"strein":"31-1231341","name":"GREAT
+        COUNCIL OF OHIO IMPROVED ORDER OF RED MEN","sub_name":"GREAT COUNCIL OF OHIO
+        IMPROVED ORDER OF RED MEN ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":10,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":311286856,"strein":"31-1286856","name":"HABITAT
+        FOR HUMANITY INTERNATIONAL INC","sub_name":"HABITAT FOR HUMANITY INTERNATIONAL
+        INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":10805301,"strein":"01-0805301","name":"HOBBY
+        RADIO INC","sub_name":"HOBBY RADIO INC ","city":"ATHENS","state":"OH","ntee_code":"B60","raw_ntee_code":"B60","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":271147162,"strein":"27-1147162","name":"HONDURAS
+        HEALTH","sub_name":"HONDURAS HEALTH","city":"ATHENS","state":"OH","ntee_code":"Q33","raw_ntee_code":"Q33","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":261705129,"strein":"26-1705129","name":"INTEGRATING
+        PROFESSIONALS FOR APPALACHIAN CHILDREN","sub_name":"INTEGRATING PROFESSIONALS
+        FOR APPALACHIAN CHILDREN","city":"ATHENS","state":"OH","ntee_code":"B90","raw_ntee_code":"B90","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":316049806,"strein":"31-6049806","name":"INTERNATIONAL
+        ASSOCIATION OF LIONS CLUBS","sub_name":"INTERNATIONAL ASSOCIATION OF LIONS
+        CLUBS ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":461820459,"strein":"46-1820459","name":"JASON
+        REED FOUNDATION","sub_name":"JASON REED FOUNDATION","city":"ATHENS","state":"OH","ntee_code":"N65","raw_ntee_code":"N65","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":237139203,"strein":"23-7139203","name":"KNIGHTS
+        TEMPLAR OF THE UNITED STATES OF AMERICA","sub_name":"KNIGHTS TEMPLAR OF THE
+        UNITED STATES OF AMERICA ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":10,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":454197098,"strein":"45-4197098","name":"MORRISON
+        GORDON ELEMENTARY PTO","sub_name":"MORRISON GORDON ELEMENTARY PTO","city":"ATHENS","state":"OH","ntee_code":"B94","raw_ntee_code":"B94","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":310904802,"strein":"31-0904802","name":"OHIO
+        ALPHA HOUSE ASSOCIATION OF PI BETA PHI","sub_name":"OHIO ALPHA HOUSE ASSOCIATION
+        OF PI BETA PHI","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":311285424,"strein":"31-1285424","name":"OHIO
+        LANDSCAPE PRODUCTIONS INC","sub_name":"OHIO LANDSCAPE PRODUCTIONS INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":820730785,"strein":"82-0730785","name":"OHIO
+        STATE UNIVERSITY","sub_name":"OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":"O52","raw_ntee_code":"O52","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":800292767,"strein":"80-0292767","name":"OHIO
+        STATE UNIVERSITY","sub_name":"OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":"O52","raw_ntee_code":"O52","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":822288880,"strein":"82-2288880","name":"PASSION
+        WORKS","sub_name":"PASSION WORKS","city":"ATHENS","state":"OH","ntee_code":"A90","raw_ntee_code":"A90","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313}],"num_pages":4,"cur_page":1,"page_offset":100,"per_page":100,"search_query":"athens","selected_state":"OH","selected_ntee":null,"selected_code":null,"data_source":"ProPublica
+        Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
+        Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
+        Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
+    http_version: 
+  recorded_at: Mon, 18 Nov 2019 23:45:19 GMT
+- request:
+    method: get
+    uri: https://projects.propublica.org/nonprofits/api/v2/search.json?page=2&q=athens&state%5Bid%5D=OH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Nov 2019 23:45:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df155e47624ac0e4319ce467dd75ec2e61574120719; expires=Tue, 17-Nov-20
+        23:45:19 GMT; path=/; domain=.propublica.org; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept,Accept-Encoding,Content-Type
+      Cache-Control:
+      - public, max-age=86400, s-maxage=31536000, stale-while-revalidate=600, stale-if-error=600
+      Etag:
+      - W/"c1b2f472d2e36d08f72587a0b24da3f9"
+      X-Request-Id:
+      - af477be3-ffc8-41a5-99f6-21aab8f64175
+      X-Runtime:
+      - '0.155534'
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '8263'
+      Alt-Svc:
+      - h3-23=":443"; ma=86400
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 537dd1421e0ec1a7-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_results":330,"organizations":[{"ein":464037701,"strein":"46-4037701","name":"PHI
+        GAMMA DELTA FRATERNITY","sub_name":"PHI GAMMA DELTA FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":237039238,"strein":"23-7039238","name":"PI
+        MU EPSILON INC","sub_name":"PI MU EPSILON INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":812802478,"strein":"81-2802478","name":"RIVER
+        ROAD RABBIT RESCUE","sub_name":"RIVER ROAD RABBIT RESCUE","city":"ATHENS","state":"OH","ntee_code":"D20","raw_ntee_code":"D20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":464837944,"strein":"46-4837944","name":"ROPES
+        N REINS","sub_name":"ROPES N REINS","city":"ATHENS","state":"OH","ntee_code":"O52","raw_ntee_code":"O52","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":814197243,"strein":"81-4197243","name":"ROTARY
+        INTERNATIONAL","sub_name":"ROTARY INTERNATIONAL ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":311311875,"strein":"31-1311875","name":"ROYAL
+        AND SELECT MASONS OF OHIO","sub_name":"ROYAL AND SELECT MASONS OF OHIO ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":8,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":462065029,"strein":"46-2065029","name":"RTT
+        COLLABORATIVE","sub_name":"RTT COLLABORATIVE","city":"ATHENS","state":"OH","ntee_code":"G039","raw_ntee_code":"G039","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":202986065,"strein":"20-2986065","name":"SACRED
+        COVENANT MINISTRIES","sub_name":"SACRED COVENANT MINISTRIES","city":"ATHENS","state":"OH","ntee_code":"X20","raw_ntee_code":"X20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":311309948,"strein":"31-1309948","name":"SIGMA
+        THETQ TAU INC","sub_name":"SIGMA THETQ TAU INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":311803623,"strein":"31-1803623","name":"SOUTHERN
+        OHIO COLLEGIATE BASEBALL CLUB","sub_name":"SOUTHERN OHIO COLLEGIATE BASEBALL
+        CLUB","city":"ATHENS","state":"OH","ntee_code":"N63","raw_ntee_code":"N63","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":453817447,"strein":"45-3817447","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":453939811,"strein":"45-3939811","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.336313},{"ein":454628550,"strein":"45-4628550","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.336313},{"ein":611732831,"strein":"61-1732831","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":"O52","raw_ntee_code":"O52","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":300500636,"strein":"30-0500636","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":311415035,"strein":"31-1415035","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":900740933,"strein":"90-0740933","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":900800456,"strein":"90-0800456","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":314324100,"strein":"31-4324100","name":"THETA
+        CHI FRATERNITY INC","sub_name":"THETA CHI FRATERNITY INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":310860366,"strein":"31-0860366","name":"TRI-COUNTY
+        MENTAL HEALTH \u0026 COUNSELING SERVICES INC","sub_name":"TRI-COUNTY MENTAL
+        HEALTH \u0026 COUNSELING SERVICES INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":311215976,"strein":"31-1215976","name":"WELLSPRING
+        RETREAT AND RESOURCE CENTER INC","sub_name":"WELLSPRING RETREAT AND RESOURCE
+        CENTER INC","city":"ATHENS","state":"OH","ntee_code":"P50","raw_ntee_code":"P50","subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.336313},{"ein":830725219,"strein":"83-0725219","name":"WORKING
+        TOOLS COMPANY","sub_name":"WORKING TOOLS COMPANY","city":"ATHENS","state":"OH","ntee_code":"W12","raw_ntee_code":"W12","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.336313},{"ein":237343827,"strein":"23-7343827","name":"AMERICAN
+        POSTAL WORKERS UNION","sub_name":"AMERICAN POSTAL WORKERS UNION ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":263566228,"strein":"26-3566228","name":"AMVETS","sub_name":"AMVETS
+        ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":19,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":610221370,"strein":"61-0221370","name":"AMVETS","sub_name":"AMVETS
+        ","city":"ATHENS","state":"OH","ntee_code":"W30","raw_ntee_code":"W30","subseccd":19,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":316050826,"strein":"31-6050826","name":"ARNOLD
+        AIR SOCIETY-SILVER WINGS","sub_name":"ARNOLD AIR SOCIETY-SILVER WINGS ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311433284,"strein":"31-1433284","name":"ATHEN
+        AREA ARTS ALLIANCE","sub_name":"ATHEN AREA ARTS ALLIANCE","city":"ATHENS","state":"OH","ntee_code":"A26Z","raw_ntee_code":"A26Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311378171,"strein":"31-1378171","name":"ATHENIAN
+        BEREAN COMMUNITY PLAYERS","sub_name":"ATHENIAN BEREAN COMMUNITY PLAYERS","city":"ATHENS","state":"OH","ntee_code":"A65Z","raw_ntee_code":"A65Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":314265956,"strein":"31-4265956","name":"BENEVOLENT
+        \u0026 PROTECTIVE ORDER OF ELKS OF THE USA","sub_name":"BENEVOLENT \u0026
+        PROTECTIVE ORDER OF ELKS OF THE USA ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":8,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":237352176,"strein":"23-7352176","name":"BETA
+        ALPHA PSI NATIONAL COUNCIL","sub_name":"BETA ALPHA PSI NATIONAL COUNCIL ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":452280594,"strein":"45-2280594","name":"BROOKFIELD
+        CHURCH INCORPORATED","sub_name":"BROOKFIELD CHURCH INCORPORATED ","city":"ATHENS","state":"OH","ntee_code":"X21","raw_ntee_code":"X21","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":341248072,"strein":"34-1248072","name":"BUCKEYE
+        BIG BUCK CLUB","sub_name":"BUCKEYE BIG BUCK CLUB","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311408723,"strein":"31-1408723","name":"BUCKEYE
+        ENVIRONMENTAL NETWORK","sub_name":"BUCKEYE ENVIRONMENTAL NETWORK","city":"ATHENS","state":"OH","ntee_code":"C360","raw_ntee_code":"C360","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":20641610,"strein":"02-0641610","name":"CALLIOPE
+        FEMINIST CHOIR","sub_name":"CALLIOPE FEMINIST CHOIR","city":"ATHENS","state":"OH","ntee_code":"A6B","raw_ntee_code":"A6B","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":474357901,"strein":"47-4357901","name":"CHABAD
+        SERVICING OHIO UNIVERSITY","sub_name":"CHABAD SERVICING OHIO UNIVERSITY","city":"ATHENS","state":"OH","ntee_code":"X30","raw_ntee_code":"X30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":316050492,"strein":"31-6050492","name":"CHI
+        OMEGA FRATERNITY","sub_name":"CHI OMEGA FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311154510,"strein":"31-1154510","name":"CIVITAN
+        INTERNATIONAL","sub_name":"CIVITAN INTERNATIONAL ","city":"ATHENS","state":"OH","ntee_code":"T40","raw_ntee_code":"T40","subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":314423202,"strein":"31-4423202","name":"COMMUNICATION
+        WORKERS OF AMERICA","sub_name":"COMMUNICATION WORKERS OF AMERICA ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":310864288,"strein":"31-0864288","name":"CONSORTIUM
+        FOR HEALTH EDUCATION IN APPALACHIA OHIO INC","sub_name":"CONSORTIUM FOR HEALTH
+        EDUCATION IN APPALACHIA OHIO INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":836052929,"strein":"83-6052929","name":"DAVID
+        LEVINSON TRUST DATED 10-05-1992 AS AMENDED AND RESTATED","sub_name":"DAVID
+        LEVINSON TRUST DATED 10-05-1992 AS AMENDED AND RESTATED ","city":"ATHENS","state":"OH","ntee_code":"T200","raw_ntee_code":"T200","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":316083642,"strein":"31-6083642","name":"DELTA
+        SIGMA THETA SORORITY INC","sub_name":"DELTA SIGMA THETA SORORITY INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311061827,"strein":"31-1061827","name":"FACTORY
+        STREET STUDIO \u0026 MOVING PARTS INC","sub_name":"FACTORY STREET STUDIO \u0026
+        MOVING PARTS INC","city":"ATHENS","state":"OH","ntee_code":"A60Z","raw_ntee_code":"A60Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":472208748,"strein":"47-2208748","name":"HAPPY
+        VALLEY RUGRATS","sub_name":"HAPPY VALLEY RUGRATS","city":"ATHENS","state":"OH","ntee_code":"O52","raw_ntee_code":"O52","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311773020,"strein":"31-1773020","name":"INTERAMERICAN
+        INTERACTION INC","sub_name":"INTERAMERICAN INTERACTION INC ","city":"ATHENS","state":"OH","ntee_code":"Q30","raw_ntee_code":"Q30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":237187146,"strein":"23-7187146","name":"INTERNATIONAL
+        ASSOCIATION OF LIONS CLUBS","sub_name":"INTERNATIONAL ASSOCIATION OF LIONS
+        CLUBS ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":237178430,"strein":"23-7178430","name":"LAMBDA
+        CHI ALPHA FRATERNITY INC","sub_name":"LAMBDA CHI ALPHA FRATERNITY INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":237501446,"strein":"23-7501446","name":"MODERN
+        WOODMEN OF AMERICA","sub_name":"MODERN WOODMEN OF AMERICA ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":8,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":611627896,"strein":"61-1627896","name":"MUSIC
+        TEACHERS NATIONAL ASSOCIATION INC","sub_name":"MUSIC TEACHERS NATIONAL ASSOCIATION
+        INC ","city":"ATHENS","state":"OH","ntee_code":"B03","raw_ntee_code":"B03","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":316050543,"strein":"31-6050543","name":"NATIONAL
+        SOCIETY OF THE DAUGHTERS OF THE AMERICAN REVOLUTION","sub_name":"NATIONAL
+        SOCIETY OF THE DAUGHTERS OF THE AMERICAN REVOLUTION ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":310981034,"strein":"31-0981034","name":"NELSONVILLE
+        PUBLIC SQUARE INC DEW HOUSE","sub_name":"NELSONVILLE PUBLIC SQUARE INC DEW
+        HOUSE","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311634465,"strein":"31-1634465","name":"OHIO
+        JUVENILE DIVERSION ASSOCIATION","sub_name":"OHIO JUVENILE DIVERSION ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":"I43","raw_ntee_code":"I43","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311004967,"strein":"31-1004967","name":"OHIO
+        R S V P DIRECTORS ASSOCIATION","sub_name":"OHIO R S V P DIRECTORS ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":316402269,"strein":"31-6402269","name":"OHIO
+        UNIVERSITY FOUNDATION","sub_name":"OHIO UNIVERSITY FOUNDATION","city":"ATHENS","state":"OH","ntee_code":"B110","raw_ntee_code":"B110","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":314446959,"strein":"31-4446959","name":"OHIOHEALTH
+        CORPORATION","sub_name":"OHIOHEALTH CORPORATION ","city":"ATHENS","state":"OH","ntee_code":"E20Z","raw_ntee_code":"E20Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":237503459,"strein":"23-7503459","name":"ORDER
+        OF THE EASTERN STAR OF OHIO","sub_name":"ORDER OF THE EASTERN STAR OF OHIO
+        ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":10,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":310903497,"strein":"31-0903497","name":"PHI
+        GAMMA DELTA FRATERNITY","sub_name":"PHI GAMMA DELTA FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":316050858,"strein":"31-6050858","name":"PHI
+        UPSILON OMICRON INC","sub_name":"PHI UPSILON OMICRON INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":540847132,"strein":"54-0847132","name":"PIONEER
+        AMERICA SOCIETY INCORPORATE","sub_name":"PIONEER AMERICA SOCIETY INCORPORATE
+        ","city":"ATHENS","state":"OH","ntee_code":"A82Z","raw_ntee_code":"A82Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311132450,"strein":"31-1132450","name":"PROJECT
+        PLANT","sub_name":"PROJECT PLANT","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":593840266,"strein":"59-3840266","name":"RACCOON
+        CREEK PARTNERSHIP INC","sub_name":"RACCOON CREEK PARTNERSHIP INC","city":"ATHENS","state":"OH","ntee_code":"C32","raw_ntee_code":"C32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":314424068,"strein":"31-4424068","name":"ROYAL
+        \u0026 SELECT MASONS OF OHIO","sub_name":"ROYAL \u0026 SELECT MASONS OF OHIO
+        ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":8,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":316050655,"strein":"31-6050655","name":"SIGMA
+        PHI GAMMA INTERNATIONAL SORORITY INC","sub_name":"SIGMA PHI GAMMA INTERNATIONAL
+        SORORITY INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311079539,"strein":"31-1079539","name":"SIGMA
+        SIGMA PHI","sub_name":"SIGMA SIGMA PHI ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":462463498,"strein":"46-2463498","name":"SOCCER
+        ASSOC FOR YOUTH","sub_name":"SOCCER ASSOC FOR YOUTH ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":200477360,"strein":"20-0477360","name":"SOCIETY
+        FOR PRESERVATION \u0026 ENCOURMT OF BARBERSHOP QUARTET SINGING AMER","sub_name":"SOCIETY
+        FOR PRESERVATION \u0026 ENCOURMT OF BARBERSHOP QUARTET SINGING AMER ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":823008382,"strein":"82-3008382","name":"SURVIVOR
+        ADVOCACY OUTREACH PROGRAM","sub_name":"SURVIVOR ADVOCACY OUTREACH PROGRAM","city":"ATHENS","state":"OH","ntee_code":"F42","raw_ntee_code":"F42","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311274367,"strein":"31-1274367","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":364694989,"strein":"36-4694989","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":451678792,"strein":"45-1678792","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":383835280,"strein":"38-3835280","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":800704343,"strein":"80-0704343","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":824402203,"strein":"82-4402203","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":"O52","raw_ntee_code":"O52","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":753126463,"strein":"75-3126463","name":"THE
+        PLAINS BAPTIST CHURCH","sub_name":"THE PLAINS BAPTIST CHURCH ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":832569001,"strein":"83-2569001","name":"TOY
+        SHELF","sub_name":"TOY SHELF","city":"ATHENS","state":"OH","ntee_code":"W99","raw_ntee_code":"W99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":311117502,"strein":"31-1117502","name":"TRUE
+        CHURCH OF THE LORD JESUS CHRIST","sub_name":"TRUE CHURCH OF THE LORD JESUS
+        CHRIST","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":475479924,"strein":"47-5479924","name":"UPGRADE
+        OHIO","sub_name":"UPGRADE OHIO","city":"ATHENS","state":"OH","ntee_code":"C35","raw_ntee_code":"C35","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":521389496,"strein":"52-1389496","name":"VIETNAM
+        VETERANS OF AMERICA INC","sub_name":"VIETNAM VETERANS OF AMERICA INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":19,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":237324975,"strein":"23-7324975","name":"WEST
+        ELEMENTARY SCHOOL PTO PARENT TEACHER ORGANIZATION","sub_name":"WEST ELEMENTARY
+        SCHOOL PTO PARENT TEACHER ORGANIZATION","city":"ATHENS","state":"OH","ntee_code":"B94","raw_ntee_code":"B94","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.28672},{"ein":471188177,"strein":"47-1188177","name":"ADYNS
+        DREAM","sub_name":"ADYNS DREAM","city":"ATHENS","state":"OH","ntee_code":"E86","raw_ntee_code":"E86","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":256085551,"strein":"25-6085551","name":"ALPHA
+        GAMMA DELTA FRATERNITY","sub_name":"ALPHA GAMMA DELTA FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":316079766,"strein":"31-6079766","name":"ALPHA
+        XI DELTA FRATERNITY","sub_name":"ALPHA XI DELTA FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":311178662,"strein":"31-1178662","name":"AMERICAN
+        ASSOCIATION OF UNIVERSITY WOMEN INC","sub_name":"AMERICAN ASSOCIATION OF UNIVERSITY
+        WOMEN INC ","city":"ATHENS","state":"OH","ntee_code":"B82O","raw_ntee_code":"B82O","subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":61701853,"strein":"06-1701853","name":"AMERICAN
+        LEGION AUXILIARY","sub_name":"AMERICAN LEGION AUXILIARY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":19,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":473114292,"strein":"47-3114292","name":"BELLA
+        RUN EQUINE","sub_name":"BELLA RUN EQUINE","city":"ATHENS","state":"OH","ntee_code":"D20","raw_ntee_code":"D20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":611692139,"strein":"61-1692139","name":"BETA
+        THETA PI FRATERNITY","sub_name":"BETA THETA PI FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":651318373,"strein":"65-1318373","name":"BLUE
+        SKY ALLIANCE OF APPALACHIAN OHIO","sub_name":"BLUE SKY ALLIANCE OF APPALACHIAN
+        OHIO","city":"ATHENS","state":"OH","ntee_code":"L30","raw_ntee_code":"L30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":311508453,"strein":"31-1508453","name":"CENTER
+        FOR STUDENT ADVOCACY","sub_name":"CENTER FOR STUDENT ADVOCACY","city":"ATHENS","state":"OH","ntee_code":"B90","raw_ntee_code":"B90","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":314146850,"strein":"31-4146850","name":"CHI
+        OMEGA SORORITY","sub_name":"CHI OMEGA SORORITY","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":310991930,"strein":"31-0991930","name":"CHURCH
+        OF CHRIST AT NELSONVILLE","sub_name":"CHURCH OF CHRIST AT NELSONVILLE","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":474549341,"strein":"47-4549341","name":"DEMOLAY
+        INTERNATIONAL","sub_name":"DEMOLAY INTERNATIONAL ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":812715851,"strein":"81-2715851","name":"DR
+        CAROLYN FOSTER BAILEY LEWIS FAMILY FOUNDATION","sub_name":"DR CAROLYN FOSTER
+        BAILEY LEWIS FAMILY FOUNDATION","city":"ATHENS","state":"OH","ntee_code":"W24","raw_ntee_code":"W24","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":310816266,"strein":"31-0816266","name":"EDUCATIONAL
+        TECHNOLOGY SERVICES OF OHIO INC","sub_name":"EDUCATIONAL TECHNOLOGY SERVICES
+        OF OHIO INC","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.159147},{"ein":237394137,"strein":"23-7394137","name":"FREE
+        \u0026 ACCEPTED MASONS OF OHIO","sub_name":"FREE \u0026 ACCEPTED MASONS OF
+        OHIO ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":10,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":310869767,"strein":"31-0869767","name":"FRIENDS
+        OF KENNEDY MUSEUM","sub_name":"FRIENDS OF KENNEDY MUSEUM","city":"ATHENS","state":"OH","ntee_code":"A51I","raw_ntee_code":"A51I","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":310840803,"strein":"31-0840803","name":"HAVAR
+        INC","sub_name":"HAVAR INC","city":"ATHENS","state":"OH","ntee_code":"P70Z","raw_ntee_code":"P70Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":311236287,"strein":"31-1236287","name":"IMPROVED
+        ORDER OF RED MEN DEGREE OF POCAHONTAS OF OHIO","sub_name":"IMPROVED ORDER
+        OF RED MEN DEGREE OF POCAHONTAS OF OHIO ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":10,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":470953309,"strein":"47-0953309","name":"INTERNATIONAL
+        MOUNTAIN BICYCLING ASSOCIATION-COLORADO","sub_name":"INTERNATIONAL MOUNTAIN
+        BICYCLING ASSOCIATION-COLORADO ","city":"ATHENS","state":"OH","ntee_code":"N32","raw_ntee_code":"N32","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":203132690,"strein":"20-3132690","name":"JOHN
+        CLEM RECOVERY HOUSE","sub_name":"JOHN CLEM RECOVERY HOUSE","city":"ATHENS","state":"OH","ntee_code":"F20","raw_ntee_code":"F20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":202588309,"strein":"20-2588309","name":"JUNIPER
+        MUSIC FESTIVAL","sub_name":"JUNIPER MUSIC FESTIVAL","city":"ATHENS","state":"OH","ntee_code":"A68","raw_ntee_code":"A68","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":310975253,"strein":"31-0975253","name":"KIWANIS
+        INTERNATIONAL INC","sub_name":"KIWANIS INTERNATIONAL INC ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147}],"num_pages":4,"cur_page":2,"page_offset":200,"per_page":100,"search_query":"athens","selected_state":"OH","selected_ntee":null,"selected_code":null,"data_source":"ProPublica
+        Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
+        Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
+        Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
+    http_version: 
+  recorded_at: Mon, 18 Nov 2019 23:45:19 GMT
+- request:
+    method: get
+    uri: https://projects.propublica.org/nonprofits/api/v2/search.json?page=3&q=athens&state%5Bid%5D=OH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Nov 2019 23:45:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd5f659a67388951cc3b14e43e3ed80f51574120719; expires=Tue, 17-Nov-20
+        23:45:19 GMT; path=/; domain=.propublica.org; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept,Accept-Encoding,Content-Type
+      Cache-Control:
+      - public, max-age=86400, s-maxage=31536000, stale-while-revalidate=600, stale-if-error=600
+      Etag:
+      - W/"e9f40c44c87d5aff0af462a3557be991"
+      X-Request-Id:
+      - af5889c2-93be-46ec-a2b7-93996f5a71a4
+      X-Runtime:
+      - '0.071826'
+      Cf-Cache-Status:
+      - MISS
+      Alt-Svc:
+      - h3-23=":443"; ma=86400
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 537dd1436cc0ea40-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_results":330,"organizations":[{"ein":452724317,"strein":"45-2724317","name":"LIVE
+        HEALTHY APPALACHIA","sub_name":"LIVE HEALTHY APPALACHIA","city":"ATHENS","state":"OH","ntee_code":"E192","raw_ntee_code":"E192","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":311290604,"strein":"31-1290604","name":"MCLUNEY
+        WESLEYAN CHURCH","sub_name":"MCLUNEY WESLEYAN CHURCH","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":237584675,"strein":"23-7584675","name":"NATIONAL
+        SOCIETY DAUGHTERS OF FOUNDERS \u0026 PATRIOTS OF AMERICA","sub_name":"NATIONAL
+        SOCIETY DAUGHTERS OF FOUNDERS \u0026 PATRIOTS OF AMERICA ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":800600616,"strein":"80-0600616","name":"OHIO
+        BREW WEEK INC","sub_name":"OHIO BREW WEEK INC ","city":"ATHENS","state":"OH","ntee_code":"S30","raw_ntee_code":"S30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":314392680,"strein":"31-4392680","name":"OHIO
+        COUNTY \u0026 INDEPENDENT AGICULTURAL SOCIETIES","sub_name":"OHIO COUNTY \u0026
+        INDEPENDENT AGICULTURAL SOCIETIES ","city":"ATHENS","state":"OH","ntee_code":"K20","raw_ntee_code":"K20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":311371528,"strein":"31-1371528","name":"OHIO
+        RIVER BASIN CONSORTIUM FOR RESEARCH AND EDUCATION FOUNDATION","sub_name":"OHIO
+        RIVER BASIN CONSORTIUM FOR RESEARCH AND EDUCATION FOUNDATION","city":"ATHENS","state":"OH","ntee_code":"T22","raw_ntee_code":"T22","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":264159979,"strein":"26-4159979","name":"OHIO
+        UNIVERSITY AMERICAN ASSOCIATION OF UNIVERSITY PROFESSO","sub_name":"OHIO UNIVERSITY
+        AMERICAN ASSOCIATION OF UNIVERSITY PROFESSO","city":"ATHENS","state":"OH","ntee_code":"S41","raw_ntee_code":"S41","subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":205062362,"strein":"20-5062362","name":"OHIO
+        VALLEY MUSEUM OF DISCOVERY INC","sub_name":"OHIO VALLEY MUSEUM OF DISCOVERY
+        INC","city":"ATHENS","state":"OH","ntee_code":"A52","raw_ntee_code":"A52","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":310844366,"strein":"31-0844366","name":"OHIO
+        VALLEY SUMMER THEATER","sub_name":"OHIO VALLEY SUMMER THEATER","city":"ATHENS","state":"OH","ntee_code":"A650","raw_ntee_code":"A650","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":821844443,"strein":"82-1844443","name":"PRAGATI
+        FOUNDATION USA","sub_name":"PRAGATI FOUNDATION USA","city":"ATHENS","state":"OH","ntee_code":"B90","raw_ntee_code":"B90","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":311342811,"strein":"31-1342811","name":"RAILROAD
+        MODEL AND HISTORICAL SOCIETY OF SOUTHEASTERN OHIO INC","sub_name":"RAILROAD
+        MODEL AND HISTORICAL SOCIETY OF SOUTHEASTERN OHIO INC","city":"ATHENS","state":"OH","ntee_code":"A80","raw_ntee_code":"A80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":316055854,"strein":"31-6055854","name":"ROTARY
+        INTERNATIONAL","sub_name":"ROTARY INTERNATIONAL ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":314380139,"strein":"31-4380139","name":"SIGMA
+        CHI FRATERNITY","sub_name":"SIGMA CHI FRATERNITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.159147},{"ein":900785554,"strein":"90-0785554","name":"SIGMA
+        GAMMA RHO SORORITY","sub_name":"SIGMA GAMMA RHO SORORITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":274448533,"strein":"27-4448533","name":"SOLLY
+        AND SAMMYS FOUNDATION FOR PEACE","sub_name":"SOLLY AND SAMMYS FOUNDATION FOR
+        PEACE","city":"ATHENS","state":"OH","ntee_code":"I72","raw_ntee_code":"I72","subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.159147},{"ein":474758117,"strein":"47-4758117","name":"SONS
+        OF ITALY IN AMERICA","sub_name":"SONS OF ITALY IN AMERICA ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":8,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":454900682,"strein":"45-4900682","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":452734669,"strein":"45-2734669","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":451150145,"strein":"45-1150145","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":451598862,"strein":"45-1598862","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":452475440,"strein":"45-2475440","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":43759183,"strein":"04-3759183","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":26.159147},{"ein":770596514,"strein":"77-0596514","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":800767558,"strein":"80-0767558","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":830455788,"strein":"83-0455788","name":"THE
+        OHIO STATE UNIVERSITY","sub_name":"THE OHIO STATE UNIVERSITY ","city":"ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":311796555,"strein":"31-1796555","name":"TRI-COUNTY
+        JVS TEACHER ASSOCIATION","sub_name":"TRI-COUNTY JVS TEACHER ASSOCIATION","city":"ATHENS","state":"OH","ntee_code":"J40","raw_ntee_code":"J40","subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":26.159147},{"ein":341341345,"strein":"34-1341345","name":"BUCKEYE
+        600 BOWLING CLUB","sub_name":"BUCKEYE 600 BOWLING CLUB","city":"NEW ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":7,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":20.450539},{"ein":202000915,"strein":"20-2000915","name":"UNITED
+        STATES BOWLING CONGRESS INC","sub_name":"UNITED STATES BOWLING CONGRESS INC
+        ","city":"NEW ATHENS","state":"OH","ntee_code":"N70","raw_ntee_code":"N70","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":20.31949},{"ein":341682790,"strein":"34-1682790","name":"AMERICAN
+        FEDERATION OF STATE COUNTY \u0026 MUNICIPAL EMPLOYEES","sub_name":"AMERICAN
+        FEDERATION OF STATE COUNTY \u0026 MUNICIPAL EMPLOYEES ","city":"NEW ATHENS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":20.284334},{"ein":371512050,"strein":"37-1512050","name":"UNITED
+        STATES BOWLING CONGRESS INC","sub_name":"UNITED STATES BOWLING CONGRESS INC
+        ","city":"NEW ATHENS","state":"OH","ntee_code":"N70","raw_ntee_code":"N70","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":20.195}],"num_pages":4,"cur_page":3,"page_offset":300,"per_page":100,"search_query":"athens","selected_state":"OH","selected_ntee":null,"selected_code":null,"data_source":"ProPublica
+        Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
+        Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
+        Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
+    http_version: 
+  recorded_at: Mon, 18 Nov 2019 23:45:20 GMT
+- request:
+    method: get
+    uri: https://projects.propublica.org/nonprofits/api/v2/search.json?page=4&q=athens&state%5Bid%5D=OH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Nov 2019 23:45:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d00299e7b86b977ed4316b1cddccdeac51574120720; expires=Tue, 17-Nov-20
+        23:45:20 GMT; path=/; domain=.propublica.org; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept,Accept-Encoding,Content-Type
+      Cache-Control:
+      - public, max-age=86400, s-maxage=31536000, stale-while-revalidate=600, stale-if-error=600
+      Etag:
+      - W/"9507b2f36b5278d87e4f5995a798a139"
+      X-Request-Id:
+      - bd95910b-aff2-433e-b79e-a137daf0e0f2
+      X-Runtime:
+      - '0.016908'
+      Cf-Cache-Status:
+      - MISS
+      Alt-Svc:
+      - h3-23=":443"; ma=86400
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 537dd1453de6cf0c-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_results":330,"organizations":[],"num_pages":4,"cur_page":4,"page_offset":400,"per_page":100,"search_query":"athens","selected_state":"OH","selected_ntee":null,"selected_code":null,"data_source":"ProPublica
+        Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
+        Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
+        Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
+    http_version: 
+  recorded_at: Mon, 18 Nov 2019 23:45:20 GMT
+recorded_with: VCR 4.0.0

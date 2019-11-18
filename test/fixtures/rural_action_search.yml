@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://projects.propublica.org/nonprofits/api/v2/search.json?q=rural%20action%20inc
+    uri: https://projects.propublica.org/nonprofits/api/v2/search.json?page=0&q=rural%20action%20inc
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 18 Nov 2019 21:48:34 GMT
+      - Mon, 18 Nov 2019 23:45:19 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d5283dcb9976ce824c71546996817f85a1574113714; expires=Tue, 17-Nov-20
-        21:48:34 GMT; path=/; domain=.propublica.org; HttpOnly
+      - __cfduid=decb66525f19f235092c3073837338f7c1574120719; expires=Tue, 17-Nov-20
+        23:45:19 GMT; path=/; domain=.propublica.org; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -40,15 +40,15 @@ http_interactions:
       Cache-Control:
       - public, max-age=86400, s-maxage=31536000, stale-while-revalidate=600, stale-if-error=600
       Etag:
-      - W/"d2ead5f65a0f2d32e34e1188a4638c49"
+      - W/"55567ca4f8118c30f4dae594bcf9c1b6"
       X-Request-Id:
-      - 821b5f10-70e6-431e-8801-2e73ee5c87b2
+      - b719f5a0-2164-4db0-a551-2dcd087cc7d1
       X-Runtime:
-      - '0.041982'
+      - '0.042765'
       Cf-Cache-Status:
       - HIT
       Age:
-      - '38'
+      - '4561'
       Alt-Svc:
       - h3-23=":443"; ma=86400
       Expect-Ct:
@@ -56,7 +56,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 537d263a98c5cf1c-IAD
+      - 537dd13fee57cf38-IAD
     body:
       encoding: ASCII-8BIT
       string: '{"total_results":5,"organizations":[{"ein":311124220,"strein":"31-1124220","name":"RURAL
@@ -71,5 +71,5 @@ http_interactions:
         Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
         Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
     http_version: 
-  recorded_at: Mon, 18 Nov 2019 21:48:34 GMT
+  recorded_at: Mon, 18 Nov 2019 23:45:19 GMT
 recorded_with: VCR 4.0.0
