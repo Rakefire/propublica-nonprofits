@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://projects.propublica.org/nonprofits/api/v2/search.json?q=%27rural%20action%20inc%27
+    uri: https://projects.propublica.org/nonprofits/api/v2/search.json?q=rural%20action%20inc
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.2
+      - Faraday v0.15.4
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 30 Nov 2018 13:37:22 GMT
+      - Mon, 18 Nov 2019 21:48:34 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dfcc179c43d055a2aeedafac9780031201543585042; expires=Sat, 30-Nov-19
-        13:37:22 GMT; path=/; domain=.propublica.org; HttpOnly
+      - __cfduid=d10fd38000588deb23a2096269ba245811574113714; expires=Tue, 17-Nov-20
+        21:48:34 GMT; path=/; domain=.propublica.org; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -37,41 +37,41 @@ http_interactions:
       - nosniff
       Vary:
       - Accept,Accept-Encoding,Content-Type
-      Surrogate-Key:
-      - nonprofits
       Cache-Control:
-      - public, max-age=604800, s-maxage=31536000
-      Surrogate-Control:
-      - public, max-age=31536000
+      - public, max-age=86400, s-maxage=31536000, stale-while-revalidate=600, stale-if-error=600
       Etag:
-      - W/"20045edf9d6d348fc566c65f426ad4c5"
+      - W/"d2ead5f65a0f2d32e34e1188a4638c49"
       X-Request-Id:
-      - '080b21f3-2434-4197-9ebf-fb85a5c5800b'
+      - 821b5f10-70e6-431e-8801-2e73ee5c87b2
       X-Runtime:
-      - '0.118391'
+      - '0.041982'
       Cf-Cache-Status:
       - HIT
+      Age:
+      - '38'
+      Alt-Svc:
+      - h3-23=":443"; ma=86400
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 481db55688935534-ORD
+      - 537d263a5cfce0fa-IAD
     body:
       encoding: ASCII-8BIT
       string: '{"total_results":5,"organizations":[{"ein":311124220,"strein":"31-1124220","name":"RURAL
-        ACTION INC","sub_name":"RURAL ACTION INC","city":"THE PLAINS","state":"OH","ntee_code":"S320","raw_ntee_code":"S320","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":538.7942},{"ein":30383463,"strein":"03-0383463","name":"OREGON
-        RURAL ACTION INC","sub_name":"OREGON RURAL ACTION INC","city":"LA GRANDE","state":"Oregon","ntee_code":"W05","raw_ntee_code":"W05","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":461.82364},{"ein":920033876,"strein":"92-0033876","name":"RURAL
+        ACTION INC","sub_name":"RURAL ACTION INC","city":"THE PLAINS","state":"OH","ntee_code":"S320","raw_ntee_code":"S320","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":12784.985},{"ein":30383463,"strein":"03-0383463","name":"OREGON
+        RURAL ACTION INC","sub_name":"OREGON RURAL ACTION INC","city":"LA GRANDE","state":"Oregon","ntee_code":"W05","raw_ntee_code":"W05","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":11579.165},{"ein":263183484,"strein":"26-3183484","name":"YOUTH
+        ACTION FOR RURAL AFRICA INC","sub_name":"YOUTH ACTION FOR RURAL AFRICA INC","city":"WEYMOUTH","state":"MA","ntee_code":"Q330","raw_ntee_code":"Q330","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":9720.275},{"ein":920033876,"strein":"92-0033876","name":"RURAL
         ALASKA COMMUNITY ACTION PROGRAM INC","sub_name":"RURAL ALASKA COMMUNITY ACTION
-        PROGRAM INC","city":"ANCHORAGE","state":"AK","ntee_code":"S200","raw_ntee_code":"S200","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":385.31723},{"ein":263183484,"strein":"26-3183484","name":"YOUTH
-        ACTION FOR RURAL AFRICA INC","sub_name":"YOUTH ACTION FOR RURAL AFRICA INC","city":"WEYMOUTH","state":"MA","ntee_code":"Q330","raw_ntee_code":"Q330","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":383.35693},{"ein":800120175,"strein":"80-0120175","name":"COMPASSION
-        IN ACTION INC","sub_name":"COMPASSION IN ACTION INC","city":"RURAL HALL","state":"NC","ntee_code":"P60","raw_ntee_code":"P60","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":227.8923}],"num_pages":1,"cur_page":0,"page_offset":0,"per_page":100,"search_query":"''rural
-        action inc''","selected_state":null,"selected_ntee":null,"selected_code":null,"data_source":"ProPublica
+        PROGRAM INC","city":"ANCHORAGE","state":"AK","ntee_code":"S200","raw_ntee_code":"S200","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":9699.071},{"ein":800120175,"strein":"80-0120175","name":"COMPASSION
+        IN ACTION INC","sub_name":"COMPASSION IN ACTION INC","city":"RURAL HALL","state":"NC","ntee_code":"P60","raw_ntee_code":"P60","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6081.9478}],"num_pages":1,"cur_page":0,"page_offset":0,"per_page":100,"search_query":"rural
+        action inc","selected_state":null,"selected_ntee":null,"selected_code":null,"data_source":"ProPublica
         Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
         Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
         Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
     http_version: 
-  recorded_at: Fri, 30 Nov 2018 13:37:23 GMT
+  recorded_at: Mon, 18 Nov 2019 21:48:34 GMT
 - request:
     method: get
     uri: https://projects.propublica.org/nonprofits/api/v2/organizations/311124220.json
@@ -80,7 +80,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.2
+      - Faraday v0.15.4
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -91,7 +91,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 30 Nov 2018 13:37:23 GMT
+      - Mon, 18 Nov 2019 21:48:34 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -99,8 +99,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d91487ed71cd1ad89c6e5e0dea16d63321543585043; expires=Sat, 30-Nov-19
-        13:37:23 GMT; path=/; domain=.propublica.org; HttpOnly
+      - __cfduid=da49625048d3d7d5d9afec05212aba4af1574113714; expires=Tue, 17-Nov-20
+        21:48:34 GMT; path=/; domain=.propublica.org; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -109,33 +109,33 @@ http_interactions:
       - nosniff
       Vary:
       - Accept,Accept-Encoding,Content-Type
-      Surrogate-Key:
-      - nonprofits
       Cache-Control:
-      - public, max-age=604800, s-maxage=31536000
-      Surrogate-Control:
-      - public, max-age=31536000
+      - public, max-age=86400, s-maxage=31536000, stale-while-revalidate=600, stale-if-error=600
       Etag:
-      - W/"4250c9a9f675154876a5182a72f6edde"
+      - W/"d824d44f28b8a31dc516490edd69ea21"
       X-Request-Id:
-      - 3947fb94-0d6c-4883-bf6c-1237569180fb
+      - 1f1fe0ca-404a-4e44-b8ed-6c075187452a
       X-Runtime:
-      - '0.139893'
+      - '0.128790'
       Cf-Cache-Status:
       - HIT
+      Age:
+      - '993'
+      Alt-Svc:
+      - h3-23=":443"; ma=86400
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 481db557ad15561f-ORD
+      - 537d263b9d039f7c-IAD
     body:
       encoding: ASCII-8BIT
       string: '{"organization":{"id":311124220,"ein":311124220,"name":"RURAL ACTION
-        INC","careofname":null,"address":"11350 JACKSON DR","city":"THE PLAINS","state":"OH","zipcode":"45780-1229","exemption_number":0,"subsection_code":3,"affiliation_code":3,"classification_codes":"1000","ruling_date":"1985-06-01","deductibility_code":1,"foundation_code":16,"activity_codes":"149000000","organization_code":1,"exempt_organization_status_code":1,"tax_period":"2016-12-01","asset_code":6,"income_code":6,"filing_requirement_code":1,"pf_filing_requirement_code":0,"accounting_period":12,"asset_amount":1287004,"income_amount":2391939,"revenue_amount":2391939,"ntee_code":"S320","sort_name":null,"created_at":"2018-04-20T23:42:48.118Z","updated_at":"2018-04-20T23:42:48.118Z","data_source":null,"have_extracts":null,"have_pdfs":null},"filings_with_data":[{"tax_prd":201412,"tax_prd_yr":2014,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2015_09_EO%2F31-1124220_990_201412.pdf","updated":"2017-06-30T00:21:09.762Z","totrevenue":1920909,"totfuncexpns":1793547,"totassetsend":972832,"totliabend":282716,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1636184,"totprgmrevnue":240980,"invstmntinc":19404,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":0,"grsalesothr":0,"cstbasisecur":0,"cstbasisothr":0,"gnlsecur":0,"gnlsothr":0,"netgnls":0,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":24341,"compnsatncurrofcr":69949,"othrsalwages":757727,"payrolltx":69029,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":205978,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":690116,"nonpfrea":"7","gftgrntsrcvd170":7952379,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":91086,"grsrcptsrelated170":265321,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201312,"tax_prd_yr":2013,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2014_12_EO%2F31-1124220_990_201312.pdf","updated":"2017-06-30T00:08:10.487Z","totrevenue":2056580,"totfuncexpns":1839315,"totassetsend":1083264,"totliabend":423406,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1760551,"totprgmrevnue":231521,"invstmntinc":2947,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":58999,"grsalesothr":0,"cstbasisecur":52575,"cstbasisothr":0,"gnlsecur":6424,"gnlsothr":0,"netgnls":6424,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":55137,"compnsatncurrofcr":60981,"othrsalwages":658385,"payrolltx":64358,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":306123,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":659858,"nonpfrea":"7","gftgrntsrcvd170":7747074,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":72099,"grsrcptsrelated170":0,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201212,"tax_prd_yr":2012,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2013_12_EO%2F31-1124220_990_201212.pdf","updated":"2017-06-29T23:51:53.393Z","totrevenue":1666029,"totfuncexpns":1797071,"totassetsend":573271,"totliabend":130678,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1422828,"totprgmrevnue":199092,"invstmntinc":409,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":228025,"grsalesothr":0,"cstbasisecur":211690,"cstbasisothr":0,"gnlsecur":16335,"gnlsothr":0,"netgnls":16335,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":27365,"compnsatncurrofcr":63366,"othrsalwages":670650,"payrolltx":64086,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":46741,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":442593,"nonpfrea":"7","gftgrntsrcvd170":6638681,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":58007,"grsrcptsrelated170":0,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201112,"tax_prd_yr":2011,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2012_12_EO%2F31-1124220_990_201112.pdf","updated":"2017-06-29T23:50:14.363Z","totrevenue":1341614,"totfuncexpns":1786062,"totassetsend":729123,"totliabend":155488,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1209650,"totprgmrevnue":122921,"invstmntinc":7866,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":56418,"grsalesothr":0,"cstbasisecur":58770,"cstbasisothr":0,"gnlsecur":-2352,"gnlsothr":0,"netgnls":-2352,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":3529,"compnsatncurrofcr":60000,"othrsalwages":638801,"payrolltx":63413,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":98351,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":573635,"nonpfrea":"7","gftgrntsrcvd170":5700143,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":49408,"grsrcptsrelated170":0,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201012,"tax_prd_yr":2010,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2011_12_EO%2F31-1124220_990_201012.pdf","updated":"2017-06-29T23:36:42.732Z","totrevenue":2053022,"totfuncexpns":1530349,"totassetsend":1263294,"totliabend":245211,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1927336,"totprgmrevnue":94868,"invstmntinc":6212,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":184488,"grsalesothr":0,"cstbasisecur":170371,"cstbasisothr":0,"gnlsecur":14117,"gnlsothr":0,"netgnls":14117,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":10489,"compnsatncurrofcr":60000,"othrsalwages":451913,"payrolltx":37056,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":155880,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":1018083,"nonpfrea":"7","gftgrntsrcvd170":6961193,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":61983,"grsrcptsrelated170":0,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220}],"filings_without_data":[{"tax_prd":201512,"tax_prd_yr":2015,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2016_12_EO%2F31-1124220_990_201512.pdf"},{"tax_prd":200912,"tax_prd_yr":2009,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2010_12_EO%2F31-1124220_990_200912.pdf"},{"tax_prd":200812,"tax_prd_yr":2008,"formtype":1,"formtype_str":"990EZ","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2009_12_EO%2F31-1124220_990EZ_200812.pdf"},{"tax_prd":200712,"tax_prd_yr":2007,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2008_12_EO%2F31-1124220_990_200712.pdf"},{"tax_prd":200612,"tax_prd_yr":2006,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2007_11_EO%2F31-1124220_990_200612.pdf"},{"tax_prd":200512,"tax_prd_yr":2005,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2006_12_EO%2F31-1124220_990_200512.pdf"},{"tax_prd":200412,"tax_prd_yr":2004,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2005_12_EO%2F31-1124220_990_200412.pdf"},{"tax_prd":200312,"tax_prd_yr":2003,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2004_12_EO%2F31-1124220_990_200312.pdf"},{"tax_prd":200212,"tax_prd_yr":2002,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2003_11_EO%2F31-1124220_990_200212.pdf"},{"tax_prd":200112,"tax_prd_yr":2001,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2002_09_EO%2F31-1124220_990_200112.pdf"}],"data_source":"ProPublica
+        INC","careofname":null,"address":"11350 JACKSON DR","city":"THE PLAINS","state":"OH","zipcode":"45780-1229","exemption_number":0,"subsection_code":3,"affiliation_code":3,"classification_codes":"1000","ruling_date":"1985-06-01","deductibility_code":1,"foundation_code":16,"activity_codes":"149000000","organization_code":1,"exempt_organization_status_code":1,"tax_period":"2017-12-01","asset_code":6,"income_code":6,"filing_requirement_code":1,"pf_filing_requirement_code":0,"accounting_period":12,"asset_amount":1229933,"income_amount":2749139,"revenue_amount":2749139,"ntee_code":"S320","sort_name":null,"created_at":"2019-10-17T20:08:14.381Z","updated_at":"2019-10-17T20:08:14.381Z","data_source":null,"have_extracts":null,"have_pdfs":null},"filings_with_data":[{"tax_prd":201712,"tax_prd_yr":2017,"formtype":0,"pdf_url":null,"updated":"2019-10-15T18:34:52.579Z","totrevenue":2749139,"totfuncexpns":2774500,"totassetsend":1229933,"totliabend":484616,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":2325030,"totprgmrevnue":389642,"invstmntinc":24504,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":0,"grsalesothr":0,"cstbasisecur":0,"cstbasisothr":0,"gnlsecur":0,"gnlsothr":0,"netgnls":0,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":9963,"compnsatncurrofcr":79816,"othrsalwages":1245129,"payrolltx":96450,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":368799,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":745317,"nonpfrea":"7","gftgrntsrcvd170":9621975,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":87615,"grsrcptsrelated170":410634,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201612,"tax_prd_yr":2016,"formtype":0,"pdf_url":null,"updated":"2018-12-10T23:12:29.657Z","totrevenue":2391939,"totfuncexpns":2476793,"totassetsend":1287004,"totliabend":516326,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":2016235,"totprgmrevnue":329172,"invstmntinc":16396,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":0,"grsalesothr":0,"cstbasisecur":0,"cstbasisothr":0,"gnlsecur":0,"gnlsothr":0,"netgnls":0,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":30136,"compnsatncurrofcr":77252,"othrsalwages":991111,"payrolltx":88044,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":370011,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":770678,"nonpfrea":"7","gftgrntsrcvd170":8740715,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":79855,"grsrcptsrelated170":945055,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201512,"tax_prd_yr":2015,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2016_12_EO%2F31-1124220_990_201512.pdf","updated":"2018-12-10T23:12:25.987Z","totrevenue":2253755,"totfuncexpns":2088339,"totassetsend":1148787,"totliabend":293255,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1935035,"totprgmrevnue":295111,"invstmntinc":41,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":0,"grsalesothr":0,"cstbasisecur":0,"cstbasisothr":0,"gnlsecur":0,"gnlsothr":0,"netgnls":0,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":23568,"compnsatncurrofcr":72566,"othrsalwages":878563,"payrolltx":88920,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":183011,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":855532,"nonpfrea":"7","gftgrntsrcvd170":7964248,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":68973,"grsrcptsrelated170":585765,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201412,"tax_prd_yr":2014,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2015_09_EO%2F31-1124220_990_201412.pdf","updated":"2017-06-30T00:21:09.762Z","totrevenue":1920909,"totfuncexpns":1793547,"totassetsend":972832,"totliabend":282716,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1636184,"totprgmrevnue":240980,"invstmntinc":19404,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":0,"grsalesothr":0,"cstbasisecur":0,"cstbasisothr":0,"gnlsecur":0,"gnlsothr":0,"netgnls":0,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":24341,"compnsatncurrofcr":69949,"othrsalwages":757727,"payrolltx":69029,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":205978,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":690116,"nonpfrea":"7","gftgrntsrcvd170":7952379,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":91086,"grsrcptsrelated170":265321,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201312,"tax_prd_yr":2013,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2014_12_EO%2F31-1124220_990_201312.pdf","updated":"2017-06-30T00:08:10.487Z","totrevenue":2056580,"totfuncexpns":1839315,"totassetsend":1083264,"totliabend":423406,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1760551,"totprgmrevnue":231521,"invstmntinc":2947,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":58999,"grsalesothr":0,"cstbasisecur":52575,"cstbasisothr":0,"gnlsecur":6424,"gnlsothr":0,"netgnls":6424,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":55137,"compnsatncurrofcr":60981,"othrsalwages":658385,"payrolltx":64358,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":306123,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":659858,"nonpfrea":"7","gftgrntsrcvd170":7747074,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":72099,"grsrcptsrelated170":0,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201212,"tax_prd_yr":2012,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2013_12_EO%2F31-1124220_990_201212.pdf","updated":"2017-06-29T23:51:53.393Z","totrevenue":1666029,"totfuncexpns":1797071,"totassetsend":573271,"totliabend":130678,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1422828,"totprgmrevnue":199092,"invstmntinc":409,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":228025,"grsalesothr":0,"cstbasisecur":211690,"cstbasisothr":0,"gnlsecur":16335,"gnlsothr":0,"netgnls":16335,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":27365,"compnsatncurrofcr":63366,"othrsalwages":670650,"payrolltx":64086,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":46741,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":442593,"nonpfrea":"7","gftgrntsrcvd170":6638681,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":58007,"grsrcptsrelated170":0,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201112,"tax_prd_yr":2011,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2012_12_EO%2F31-1124220_990_201112.pdf","updated":"2017-06-29T23:50:14.363Z","totrevenue":1341614,"totfuncexpns":1786062,"totassetsend":729123,"totliabend":155488,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1209650,"totprgmrevnue":122921,"invstmntinc":7866,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":56418,"grsalesothr":0,"cstbasisecur":58770,"cstbasisothr":0,"gnlsecur":-2352,"gnlsothr":0,"netgnls":-2352,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":3529,"compnsatncurrofcr":60000,"othrsalwages":638801,"payrolltx":63413,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":98351,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":573635,"nonpfrea":"7","gftgrntsrcvd170":5700143,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":49408,"grsrcptsrelated170":0,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220},{"tax_prd":201012,"tax_prd_yr":2010,"formtype":0,"pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2011_12_EO%2F31-1124220_990_201012.pdf","updated":"2017-06-29T23:36:42.732Z","totrevenue":2053022,"totfuncexpns":1530349,"totassetsend":1263294,"totliabend":245211,"pct_compnsatncurrofcr":0.0,"tax_pd":null,"subseccd":3,"unrelbusinccd":"N","initiationfees":0,"grsrcptspublicuse":0,"grsincmembers":0,"grsincother":0,"totcntrbgfts":1927336,"totprgmrevnue":94868,"invstmntinc":6212,"txexmptbndsproceeds":0,"royaltsinc":0,"grsrntsreal":0,"grsrntsprsnl":0,"rntlexpnsreal":0,"rntlexpnsprsnl":0,"rntlincreal":0,"rntlincprsnl":0,"netrntlinc":0,"grsalesecur":184488,"grsalesothr":0,"cstbasisecur":170371,"cstbasisothr":0,"gnlsecur":14117,"gnlsothr":0,"netgnls":14117,"grsincfndrsng":0,"lessdirfndrsng":0,"netincfndrsng":0,"grsincgaming":0,"lessdirgaming":0,"netincgaming":0,"grsalesinvent":0,"lesscstofgoods":0,"netincsales":0,"miscrevtot11e":10489,"compnsatncurrofcr":60000,"othrsalwages":451913,"payrolltx":37056,"profndraising":0,"txexmptbndsend":0,"secrdmrtgsend":155880,"unsecurednotesend":0,"retainedearnend":0,"totnetassetend":1018083,"nonpfrea":"7","gftgrntsrcvd170":6961193,"txrevnuelevied170":0,"srvcsval170":0,"grsinc170":61983,"grsrcptsrelated170":0,"totgftgrntrcvd509":0,"grsrcptsadmissn509":0,"txrevnuelevied509":0,"srvcsval509":0,"subtotsuppinc509":0,"totsupp509":0,"ein":311124220}],"filings_without_data":[{"tax_prd":200912,"tax_prd_yr":2009,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2010_12_EO%2F31-1124220_990_200912.pdf"},{"tax_prd":200812,"tax_prd_yr":2008,"formtype":1,"formtype_str":"990EZ","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2009_12_EO%2F31-1124220_990EZ_200812.pdf"},{"tax_prd":200712,"tax_prd_yr":2007,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2008_12_EO%2F31-1124220_990_200712.pdf"},{"tax_prd":200612,"tax_prd_yr":2006,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2007_11_EO%2F31-1124220_990_200612.pdf"},{"tax_prd":200512,"tax_prd_yr":2005,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2006_12_EO%2F31-1124220_990_200512.pdf"},{"tax_prd":200412,"tax_prd_yr":2004,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2005_12_EO%2F31-1124220_990_200412.pdf"},{"tax_prd":200312,"tax_prd_yr":2003,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2004_12_EO%2F31-1124220_990_200312.pdf"},{"tax_prd":200212,"tax_prd_yr":2002,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2003_11_EO%2F31-1124220_990_200212.pdf"},{"tax_prd":200112,"tax_prd_yr":2001,"formtype":0,"formtype_str":"990","pdf_url":"https://projects.propublica.org/nonprofits/download-filing?path=2002_09_EO%2F31-1124220_990_200112.pdf"}],"data_source":"ProPublica
         Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
         Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
         Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
     http_version: 
-  recorded_at: Fri, 30 Nov 2018 13:37:23 GMT
+  recorded_at: Mon, 18 Nov 2019 21:48:34 GMT
 recorded_with: VCR 4.0.0
