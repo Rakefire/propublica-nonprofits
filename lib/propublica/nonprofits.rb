@@ -1,8 +1,8 @@
 require "propublica/nonprofits/version"
 require "propublica/nonprofits/organization"
 
-require 'faraday'
-require 'json'
+require "faraday"
+require "json"
 
 API_BASE_URL = %(https://projects.propublica.org/nonprofits/api/v2)
 

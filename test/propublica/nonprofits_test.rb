@@ -8,7 +8,7 @@ class Propublica::NonprofitsTest < Minitest::Test
   end
 
   def test_it_searchs_a_single_nonprofit
-    VCR.use_cassette('rural_action_search') do
+    VCR.use_cassette("rural_action_search") do
       rural_action_results = Propublica::Nonprofits.search("rural action inc")
       first_item = rural_action_results.first
 
@@ -33,7 +33,7 @@ class Propublica::NonprofitsTest < Minitest::Test
   end
 
   def test_it_requests_details_if_not_fetched_yet
-    VCR.use_cassette('rural_action_search_with_details') do
+    VCR.use_cassette("rural_action_search_with_details") do
       rural_action_results = Propublica::Nonprofits.search("rural action inc")
       first_item = rural_action_results.first
 
@@ -42,7 +42,7 @@ class Propublica::NonprofitsTest < Minitest::Test
   end
 
   def test_it_searchs_multiple_nonprofits
-    VCR.use_cassette('rural_search') do
+    VCR.use_cassette("rural_search") do
       rural_action_results = Propublica::Nonprofits.search("rural")
 
       assert_instance_of Enumerator::Lazy, rural_action_results
@@ -55,33 +55,33 @@ class Propublica::NonprofitsTest < Minitest::Test
   end
 
   def test_it_finds_organization_attribues_by_ein
-    VCR.use_cassette('rural_action_ein') do
+    VCR.use_cassette("rural_action_ein") do
       rural_action = Propublica::Nonprofits.find_attributes(311124220)
       assert_instance_of Hash, rural_action
     end
   end
 
   def test_it_finds_organization_by_ein
-    VCR.use_cassette('rural_action_ein') do
+    VCR.use_cassette("rural_action_ein") do
       rural_action = Propublica::Nonprofits.find(311124220)
       assert_instance_of Propublica::Nonprofits::Organization, rural_action
     end
   end
 
   def test_it_raises_error_if_fetching_basic_data_from_ein_find
-    VCR.use_cassette('rural_action_ein') do
+    VCR.use_cassette("rural_action_ein") do
       rural_action = Propublica::Nonprofits.find(311124220)
 
       error = assert_raises Propublica::Nonprofits::DataNotFetched do
-          rural_action.basic.city
-        end
+        rural_action.basic.city
+      end
 
       assert_includes error.message, "BasicParser#city not fetched from API. This may be due to an API error or because you tried to access a Basic property on the full results"
     end
   end
 
   def test_organization_details_parsing
-    VCR.use_cassette('rural_action_ein') do
+    VCR.use_cassette("rural_action_ein") do
       rural_action = Propublica::Nonprofits.find(311124220)
 
       assert_equal rural_action.details.id, 311124220
@@ -122,7 +122,7 @@ class Propublica::NonprofitsTest < Minitest::Test
   end
 
   def test_organization_filings_with_data_parsing
-    VCR.use_cassette('rural_action_ein') do
+    VCR.use_cassette("rural_action_ein") do
       rural_action = Propublica::Nonprofits.find(311124220)
 
       rural_action.filings_with_data.each do |filing_data|
@@ -201,7 +201,7 @@ class Propublica::NonprofitsTest < Minitest::Test
   end
 
   def test_organization_filings_without_data_parsing
-    VCR.use_cassette('rural_action_ein') do
+    VCR.use_cassette("rural_action_ein") do
       rural_action = Propublica::Nonprofits.find(311124220)
 
       rural_action.filings_without_data.each do |filing_data|
@@ -217,7 +217,7 @@ class Propublica::NonprofitsTest < Minitest::Test
   end
 
   def test_organization_data_source_parsing
-    VCR.use_cassette('rural_action_ein') do
+    VCR.use_cassette("rural_action_ein") do
       rural_action = Propublica::Nonprofits.find(311124220)
 
       assert_includes rural_action.data_source, "ProPublica Nonprofit Explorer API"
@@ -225,7 +225,7 @@ class Propublica::NonprofitsTest < Minitest::Test
   end
 
   def test_organization_api_version_parsing
-    VCR.use_cassette('rural_action_ein') do
+    VCR.use_cassette("rural_action_ein") do
       rural_action = Propublica::Nonprofits.find(311124220)
 
       assert_equal 2, rural_action.api_version
@@ -240,13 +240,13 @@ class Propublica::NonprofitsTest < Minitest::Test
   end
 
   def test_parser_objects_expose_fields
-    organization = Propublica::Nonprofits::Organization.new({"basic" => {},
-                                                             "organization" => {},
-                                                             "filings_with_data" => [{}],
-                                                             "filings_without_data" => [{}],
-                                                             "data_source" => "",
-                                                             "api_version" => "",
-                                                             "error" => ""})
+    organization = Propublica::Nonprofits::Organization.new({ "basic" => {},
+                                                              "organization" => {},
+                                                              "filings_with_data" => [{}],
+                                                              "filings_without_data" => [{}],
+                                                              "data_source" => "",
+                                                              "api_version" => "",
+                                                              "error" => "" })
 
     assert_instance_of Array, organization.basic.fields
     assert_instance_of Symbol, organization.basic.fields.first
