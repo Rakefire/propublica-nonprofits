@@ -1,0 +1,7 @@
+#!/bin/sh
+
+mkdir -p old-versions
+mv *.gem old-versions
+
+bundle exec gem build *.gemspec
+bundle exec gem push *.gem

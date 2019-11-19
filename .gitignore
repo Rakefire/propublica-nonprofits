@@ -7,4 +7,5 @@
 /spec/reports/
 /tmp/
 /*.gem
+/old-versions/*.gem
 .DS_Store
