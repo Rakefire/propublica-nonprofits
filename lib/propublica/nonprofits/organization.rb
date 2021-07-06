@@ -1,8 +1,6 @@
 module Propublica
   module Nonprofits
     class Organization
-      attr_reader :basic
-
       def initialize(attributes)
         @attributes = attributes
       end
