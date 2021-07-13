@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    propublica-nonprofits (0.4.0)
+    propublica-nonprofits (0.4.1)
       faraday
       json
 
@@ -13,20 +13,36 @@ GEM
     coderay (1.1.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
-    faraday (0.15.4)
+    faraday (1.5.1)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0.1)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.1)
+      faraday-patron (~> 1.0)
       multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.2.0)
+    faraday-patron (1.0.0)
     hashdiff (1.0.0)
-    json (2.3.1)
+    json (2.5.1)
     method_source (0.9.0)
     minitest (5.11.3)
     minitest-line (0.6.5)
       minitest (~> 5.0)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     public_suffix (4.0.6)
     rake (13.0.1)
+    ruby2_keywords (0.0.4)
     safe_yaml (1.0.5)
     vcr (4.0.0)
     webmock (3.7.6)
@@ -38,7 +54,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.16)
+  bundler (>= 2.2.10)
   minitest (~> 5.0)
   minitest-line
   propublica-nonprofits!
@@ -48,4 +64,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.17.2
+   2.2.23
