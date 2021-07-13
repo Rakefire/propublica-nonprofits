@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.4
+      - Faraday v1.5.1
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -19,16 +19,13 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 18 Nov 2019 23:45:19 GMT
+      - Tue, 13 Jul 2021 01:47:51 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
-      Set-Cookie:
-      - __cfduid=decb66525f19f235092c3073837338f7c1574120719; expires=Tue, 17-Nov-20
-        23:45:19 GMT; path=/; domain=.propublica.org; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -40,36 +37,38 @@ http_interactions:
       Cache-Control:
       - public, max-age=86400, s-maxage=31536000, stale-while-revalidate=600, stale-if-error=600
       Etag:
-      - W/"55567ca4f8118c30f4dae594bcf9c1b6"
+      - W/"4ea8a49f59904d025064eb9dfa7f6174"
       X-Request-Id:
-      - b719f5a0-2164-4db0-a551-2dcd087cc7d1
+      - a823fcf2-9230-40f1-ae4d-3168bee0d065
       X-Runtime:
-      - '0.042765'
+      - '0.096193'
       Cf-Cache-Status:
       - HIT
       Age:
-      - '4561'
-      Alt-Svc:
-      - h3-23=":443"; ma=86400
+      - '461'
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 537dd13fee57cf38-IAD
+      - 66ded87d7db32a51-ORD
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+        ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"total_results":5,"organizations":[{"ein":311124220,"strein":"31-1124220","name":"RURAL
-        ACTION INC","sub_name":"RURAL ACTION INC","city":"THE PLAINS","state":"OH","ntee_code":"S320","raw_ntee_code":"S320","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":12784.985},{"ein":30383463,"strein":"03-0383463","name":"OREGON
-        RURAL ACTION INC","sub_name":"OREGON RURAL ACTION INC","city":"LA GRANDE","state":"Oregon","ntee_code":"W05","raw_ntee_code":"W05","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":11579.165},{"ein":263183484,"strein":"26-3183484","name":"YOUTH
-        ACTION FOR RURAL AFRICA INC","sub_name":"YOUTH ACTION FOR RURAL AFRICA INC","city":"WEYMOUTH","state":"MA","ntee_code":"Q330","raw_ntee_code":"Q330","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":9720.275},{"ein":920033876,"strein":"92-0033876","name":"RURAL
+      string: '{"total_results":6,"organizations":[{"ein":311124220,"strein":"31-1124220","name":"RURAL
+        ACTION INC","sub_name":"RURAL ACTION INC","city":"THE PLAINS","state":"OH","ntee_code":"S320","raw_ntee_code":"S320","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":12766.716},{"ein":30383463,"strein":"03-0383463","name":"OREGON
+        RURAL ACTION INC","sub_name":"OREGON RURAL ACTION INC","city":"LA GRANDE","state":"Oregon","ntee_code":"W05","raw_ntee_code":"W05","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":11557.551},{"ein":813032398,"strein":"81-3032398","name":"RURAL
+        WOMEN IN ACTION INC","sub_name":"RURAL WOMEN IN ACTION INC","city":"WINDER","state":"GA","ntee_code":"G81","raw_ntee_code":"G81","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":10503.581},{"ein":263183484,"strein":"26-3183484","name":"YOUTH
+        ACTION FOR RURAL AFRICA INC","sub_name":"YOUTH ACTION FOR RURAL AFRICA INC","city":"WEYMOUTH","state":"MA","ntee_code":"Q330","raw_ntee_code":"Q330","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":9696.616},{"ein":920033876,"strein":"92-0033876","name":"RURAL
         ALASKA COMMUNITY ACTION PROGRAM INC","sub_name":"RURAL ALASKA COMMUNITY ACTION
-        PROGRAM INC","city":"ANCHORAGE","state":"AK","ntee_code":"S200","raw_ntee_code":"S200","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":9699.071},{"ein":800120175,"strein":"80-0120175","name":"COMPASSION
-        IN ACTION INC","sub_name":"COMPASSION IN ACTION INC","city":"RURAL HALL","state":"NC","ntee_code":"P60","raw_ntee_code":"P60","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6081.9478}],"num_pages":1,"cur_page":0,"page_offset":0,"per_page":100,"search_query":"rural
+        PROGRAM INC","city":"ANCHORAGE","state":"AK","ntee_code":"S200","raw_ntee_code":"S200","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":9668.26},{"ein":800120175,"strein":"80-0120175","name":"COMPASSION
+        IN ACTION INC","sub_name":"COMPASSION IN ACTION INC","city":"RURAL HALL","state":"NC","ntee_code":"P60","raw_ntee_code":"P60","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6046.872}],"num_pages":1,"cur_page":0,"page_offset":0,"per_page":100,"search_query":"rural
         action inc","selected_state":null,"selected_ntee":null,"selected_code":null,"data_source":"ProPublica
         Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
         Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
         Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
-    http_version: 
-  recorded_at: Mon, 18 Nov 2019 23:45:19 GMT
+    http_version:
+  recorded_at: Tue, 13 Jul 2021 01:47:51 GMT
 recorded_with: VCR 4.0.0

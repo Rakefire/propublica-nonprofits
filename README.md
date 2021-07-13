@@ -40,8 +40,11 @@ To search the API and return an array of Propublica::Nonprofits::Objects, use th
     result.details.deductibility_code
     result.filings_with_data.first.totassetsend
 
+    Want to be as memory and API efficient as possible? Be lazy!
+    `Propublica::Nonprofits.lazy_search("rural").first(10)` will only fetch first 10 items
+
 *Note: This will currently only return the first 100 organizations*
-*Note: This is returned as a Enumerator::Lazy, to be as memory efficient as possible, if you do something like `Propublica::Nonprofits.search("rural").first(10)`*
+*Note: This is returned as an Array*
 
 
 ### EIN Lookup - As Organization
@@ -79,11 +82,6 @@ consider using the `find_attributes` method.
 
     attributes.dig("organization", "name")
     attributes.dig("filings_without_data").first.dig("pdf_url")
-
-## TODO
-
-- Add more robust searching parameters https://projects.propublica.org/nonprofits/api/#endpoint-search-example
-- Handle paginated search results (with Enumerator::Lazy)
 
 ## Development
 

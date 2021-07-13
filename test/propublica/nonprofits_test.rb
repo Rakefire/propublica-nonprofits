@@ -12,7 +12,7 @@ class Propublica::NonprofitsTest < Minitest::Test
       rural_action_results = Propublica::Nonprofits.search("rural action inc")
       first_item = rural_action_results.first
 
-      assert_instance_of Enumerator::Lazy, rural_action_results
+      assert_instance_of Array, rural_action_results
       assert_instance_of Propublica::Nonprofits::Organization, first_item
 
       assert_equal "THE PLAINS", first_item.basic.city
@@ -20,7 +20,7 @@ class Propublica::NonprofitsTest < Minitest::Test
       assert_equal "RURAL ACTION INC", first_item.basic.name
       assert_equal "S320", first_item.basic.ntee_code
       assert_equal "S320", first_item.basic.raw_ntee_code
-      assert_equal 12784.985, first_item.basic.score
+      assert_equal 12766.716, first_item.basic.score
       assert_equal "OH", first_item.basic.state
       assert_equal "31-1124220", first_item.basic.strein
       assert_equal "RURAL ACTION INC", first_item.basic.sub_name
@@ -45,7 +45,7 @@ class Propublica::NonprofitsTest < Minitest::Test
     VCR.use_cassette("rural_search") do
       rural_action_results = Propublica::Nonprofits.search("rural")
 
-      assert_instance_of Enumerator::Lazy, rural_action_results
+      assert_instance_of Array, rural_action_results
       assert_operator rural_action_results.size, :>, 1
 
       rural_action_results.each do |org|
@@ -58,8 +58,8 @@ class Propublica::NonprofitsTest < Minitest::Test
     VCR.use_cassette("rural_search_limit_ohio") do
       rural_action_results = Propublica::Nonprofits.search("rural", state: "OH")
 
-      assert_instance_of Enumerator::Lazy, rural_action_results
-      assert_equal 61, rural_action_results.size
+      assert_instance_of Array, rural_action_results
+      assert_equal 66, rural_action_results.size
 
       rural_action_results.each do |org|
         assert_instance_of Propublica::Nonprofits::Organization, org
@@ -68,12 +68,30 @@ class Propublica::NonprofitsTest < Minitest::Test
     end
   end
 
-  def test_it_searchs_multiple_nonprofits_with_state_limiter
+  def test_it_lazily_searchs_multiple_nonprofits_with_state_limiter
+    VCR.use_cassette("rural_search_limit_ohio") do
+      rural_action_results = Propublica::Nonprofits.lazy_search("rural", state: "OH")
+
+      assert_instance_of Enumerator::Lazy, rural_action_results
+      assert_nil rural_action_results.size
+
+      counter = 0
+      rural_action_results.each do |org|
+        assert_instance_of Propublica::Nonprofits::Organization, org
+        assert_equal "OH", org.basic.state
+        counter += 1
+      end
+
+      assert_equal 66, counter
+    end
+  end
+
+  def test_it_searchs_multiple_nonprofits_with_state_limiter_fetching_all
     VCR.use_cassette("athens_search_limit_ohio_multiple_pages_fetching_all") do
       ohio_results = Propublica::Nonprofits.search("athens", state: "OH", fetch_all: true)
 
-      assert_instance_of Enumerator::Lazy, ohio_results
-      assert_equal 330, ohio_results.size
+      assert_instance_of Array, ohio_results
+      assert_equal 345, ohio_results.size
 
       ohio_results.each do |org|
         assert_instance_of Propublica::Nonprofits::Organization, org
@@ -114,10 +132,10 @@ class Propublica::NonprofitsTest < Minitest::Test
       assert_equal 311124220, rural_action.details.id
       assert_equal 311124220, rural_action.details.ein
       assert_equal "RURAL ACTION INC", rural_action.details.name
-      assert_equal "11350 JACKSON DR", rural_action.details.address
+      assert_equal "9030 HOCKING HILLS DR", rural_action.details.address
       assert_equal "THE PLAINS", rural_action.details.city
       assert_equal "OH", rural_action.details.state
-      assert_equal "45780-1229", rural_action.details.zipcode
+      assert_equal "45780-1209", rural_action.details.zipcode
       assert_equal 0, rural_action.details.exemption_number
       assert_equal 3, rural_action.details.subsection_code
       assert_equal 3, rural_action.details.affiliation_code
@@ -128,18 +146,18 @@ class Propublica::NonprofitsTest < Minitest::Test
       assert_equal 16, rural_action.details.foundation_code
       assert_equal 1, rural_action.details.organization_code
       assert_equal 1, rural_action.details.exempt_organization_status_code
-      assert_equal "2017-12-01", rural_action.details.tax_period
+      assert_equal "2018-12-01", rural_action.details.tax_period
       assert_equal 6, rural_action.details.asset_code
       assert_equal 6, rural_action.details.income_code
       assert_equal 1, rural_action.details.filing_requirement_code
       assert_equal 0, rural_action.details.pf_filing_requirement_code
       assert_equal 12, rural_action.details.accounting_period
-      assert_equal 1229933, rural_action.details.asset_amount
-      assert_equal 2749139, rural_action.details.income_amount
-      assert_equal 2749139, rural_action.details.revenue_amount
+      assert_equal 1189839, rural_action.details.asset_amount
+      assert_equal 2845177, rural_action.details.income_amount
+      assert_equal 2845177, rural_action.details.revenue_amount
       assert_equal "S320", rural_action.details.ntee_code
-      assert_equal "2019-10-17T20:08:14.381Z", rural_action.details.created_at
-      assert_equal "2019-10-17T20:08:14.381Z", rural_action.details.updated_at
+      assert_equal "2021-06-23T16:40:46.255Z", rural_action.details.created_at
+      assert_equal "2021-06-23T16:40:46.255Z", rural_action.details.updated_at
       assert_nil rural_action.details.careofname
       assert_nil rural_action.details.data_source
       assert_nil rural_action.details.have_extracts

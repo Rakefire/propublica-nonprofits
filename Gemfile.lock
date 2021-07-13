@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    propublica-nonprofits (0.4.1)
+    propublica-nonprofits (1.0.0)
       faraday
       json
 
