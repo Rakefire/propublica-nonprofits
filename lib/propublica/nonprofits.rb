@@ -48,22 +48,12 @@ module Propublica
           params["ntee[id]"] = ntee if ntee
           params["page"] = page if page
 
-          response = Faraday.default_connection.get("#{API_BASE_URL}/#{API_SEARCH_PATH}", params)
-          parsed_response =
-            if response.body.is_a?(Hash)
-              response.body
-            else
-              begin
-                JSON.parse(response.body)
-              rescue JSON::ParserError => e
-                raise JSON::ParserError.new("Propublica API Parsing Error: #{e.message}")
-              end
-            end
-
-          max_pages = parsed_response.dig("num_pages") || max_pages
+          response = connection.get("/#{API_SEARCH_PATH}", params)
+          max_pages = response.body.dig("num_pages") || max_pages
 
           yielder <<
-            parsed_response
+            response
+              .body
               .fetch("organizations", [])
               .map { |basic_attrs| Propublica::Nonprofits::Organization.new("basic" => basic_attrs) }
 
@@ -74,24 +64,31 @@ module Propublica
           end
         end
       end
+
+    rescue JSON::ParserError => e
+      raise JSON::ParserError.new("Propublica API Parsing Error: #{e.message}")
     end
 
     def self.find(ein)
-      attributes = self.find_attributes(ein)
-      Propublica::Nonprofits::Organization.new(attributes)
+      Propublica::Nonprofits::Organization.new(
+        self.find_attributes(ein)
+      )
+    end
+
+    def self.connection
+      Faraday
+        .new(API_BASE_URL) do |f|
+          f.response :json
+        end
     end
 
     def self.find_attributes(ein)
-      response = Faraday.get("#{API_BASE_URL}/nonprofits/api/v2/organizations/#{ein}.json")
-      if response.body.is_a?(Hash)
-        response.body
-      else
-        begin
-          JSON.parse(response.body)
-        rescue JSON::ParserError => e
-          raise JSON::ParserError.new("Propublica API Parsing Error: #{e.message}")
-        end
-      end
+      connection
+        .get("/nonprofits/api/v2/organizations/#{ein}.json")
+        .body
+
+    rescue JSON::ParserError => e
+      raise JSON::ParserError.new("Propublica API Parsing Error: #{e.message}")
     end
   end
 end

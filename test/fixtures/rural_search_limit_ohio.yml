@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.5.1
+      - Faraday v2.7.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -19,151 +19,153 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 13 Jul 2021 01:47:51 GMT
+      - Tue, 03 Jan 2023 21:22:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Vary:
-      - Accept,Accept-Encoding,Content-Type
+      Cf-Ray:
+      - 783ecabf1d87590e-IAD
       Cache-Control:
       - public, max-age=86400, s-maxage=31536000, stale-while-revalidate=600, stale-if-error=600
       Etag:
-      - W/"392f1ffc64f8a57e478590366a73d468"
-      X-Request-Id:
-      - afffc2e7-47e4-4c0c-9458-671425a6015c
-      X-Runtime:
-      - '0.183990'
+      - W/"0a1434183e57908353f2f38c222bedd9"
+      Vary:
+      - Accept,Accept-Encoding,Content-Type
       Cf-Cache-Status:
       - MISS
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 49400599-b108-425d-9b40-ea9e2398795e
+      X-Runtime:
+      - '0.112676'
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
       - cloudflare
-      Cf-Ray:
-      - 66ded87aec78c524-ORD
       Alt-Svc:
-      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
-        ma=86400
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"total_results":66,"organizations":[{"ein":311124220,"strein":"31-1124220","name":"RURAL
-        ACTION INC","sub_name":"RURAL ACTION INC","city":"THE PLAINS","state":"OH","ntee_code":"S320","raw_ntee_code":"S320","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6108.115},{"ein":851060377,"strein":"85-1060377","name":"NORTHWESTERN
-        OHIO RURAL ARTS","sub_name":"NORTHWESTERN OHIO RURAL ARTS","city":"WALBRIDGE","state":"OH","ntee_code":"P99","raw_ntee_code":"P99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5573.0894},{"ein":310917953,"strein":"31-0917953","name":"OHIO
-        RURAL WATER ASSOCIATION","sub_name":"OHIO RURAL WATER ASSOCIATION","city":"ZANESVILLE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5573.0894},{"ein":202983991,"strein":"20-2983991","name":"HELPING
-        APPALACHIAN RURAL PEOPLES","sub_name":"HELPING APPALACHIAN RURAL PEOPLES","city":"CALDWELL","state":"OH","ntee_code":"P58","raw_ntee_code":"P58","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5529.9062},{"ein":310989294,"strein":"31-0989294","name":"RURAL
-        APPALACHIAN HOUSING INCORPORATED","sub_name":"RURAL APPALACHIAN HOUSING INCORPORATED","city":"GEORGETOWN","state":"OH","ntee_code":"L21Z","raw_ntee_code":"L21Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5529.9062},{"ein":10644781,"strein":"01-0644781","name":"RURAL
+      string: '{"total_results":68,"organizations":[{"ein":311124220,"strein":"31-1124220","name":"RURAL
+        ACTION INC","sub_name":"RURAL ACTION INC","city":"THE PLAINS","state":"OH","ntee_code":"S320","raw_ntee_code":"S320","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":6126.1797},{"ein":851060377,"strein":"85-1060377","name":"NORTHWESTERN
+        OHIO RURAL ARTS","sub_name":"NORTHWESTERN OHIO RURAL ARTS","city":"WALBRIDGE","state":"OH","ntee_code":"P99","raw_ntee_code":"P99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5559.7476},{"ein":310917953,"strein":"31-0917953","name":"OHIO
+        RURAL WATER ASSOCIATION","sub_name":"OHIO RURAL WATER ASSOCIATION","city":"ZANESVILLE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5559.7476},{"ein":202983991,"strein":"20-2983991","name":"HELPING
+        APPALACHIAN RURAL PEOPLES","sub_name":"HELPING APPALACHIAN RURAL PEOPLES","city":"CALDWELL","state":"OH","ntee_code":"P58","raw_ntee_code":"P58","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5543.5493},{"ein":310989294,"strein":"31-0989294","name":"RURAL
+        APPALACHIAN HOUSING INCORPORATED","sub_name":"RURAL APPALACHIAN HOUSING INCORPORATED","city":"GEORGETOWN","state":"OH","ntee_code":"L21Z","raw_ntee_code":"L21Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5543.5493},{"ein":872240581,"strein":"87-2240581","name":"RURAL
+        OHIO CATS \u0026 KITTENS","sub_name":"RURAL OHIO CATS \u0026 KITTENS ","city":"NEW
+        ALBANY","state":"OH","ntee_code":"D20","raw_ntee_code":"D20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5543.5493},{"ein":10644781,"strein":"01-0644781","name":"RURAL
         WATER VENTURES INC","sub_name":"RURAL WATER VENTURES INC","city":"CHAGRIN
-        FALLS","state":"OH","ntee_code":"O30","raw_ntee_code":"O30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5529.9062},{"ein":340058725,"strein":"34-0058725","name":"AKRON
-        RURAL CEMETERY ASSOCIATION","sub_name":"AKRON RURAL CEMETERY ASSOCIATION","city":"AKRON","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":13,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5528.0693},{"ein":473193029,"strein":"47-3193029","name":"OHIO
-        RURAL HERITAGE ASSOCIATION","sub_name":"OHIO RURAL HERITAGE ASSOCIATION","city":"RIPLEY","state":"OH","ntee_code":"A80","raw_ntee_code":"A80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5528.0693},{"ein":834060292,"strein":"83-4060292","name":"OHIOS
-        RURAL AMERICA RELIEF","sub_name":"OHIOS RURAL AMERICA RELIEF","city":"SYCAMORE","state":"OH","ntee_code":"M20","raw_ntee_code":"M20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5528.0693},{"ein":314234980,"strein":"31-4234980","name":"LICKING
-        RURAL ELECTRIFICATION INC","sub_name":"LICKING RURAL ELECTRIFICATION INC","city":"NEWARK","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5516.3096},{"ein":311121963,"strein":"31-1121963","name":"LICKING
-        RURAL ELECTRIFICATION INC","sub_name":"LICKING RURAL ELECTRIFICATION INC ","city":"NEWARK","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5516.3096},{"ein":452147363,"strein":"45-2147363","name":"BUCKEYE
+        FALLS","state":"OH","ntee_code":"O30","raw_ntee_code":"O30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5543.5493},{"ein":314234980,"strein":"31-4234980","name":"LICKING
+        RURAL ELECTRIFICATION INC","sub_name":"LICKING RURAL ELECTRIFICATION INC","city":"NEWARK","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5537.4673},{"ein":311121963,"strein":"31-1121963","name":"LICKING
+        RURAL ELECTRIFICATION INC","sub_name":"LICKING RURAL ELECTRIFICATION INC ","city":"NEWARK","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5537.4673},{"ein":314392641,"strein":"31-4392641","name":"RURAL
+        CARRIER''S PROVIDENT GUILD","sub_name":"RURAL CARRIER''S PROVIDENT GUILD","city":"URBANA","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":0,"has_subseccd":false,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5537.4673},{"ein":340058725,"strein":"34-0058725","name":"AKRON
+        RURAL CEMETERY ASSOCIATION","sub_name":"AKRON RURAL CEMETERY ASSOCIATION","city":"AKRON","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":13,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5517.3066},{"ein":834060292,"strein":"83-4060292","name":"OHIOS
+        RURAL AMERICA RELIEF","sub_name":"OHIOS RURAL AMERICA RELIEF","city":"SYCAMORE","state":"OH","ntee_code":"M20","raw_ntee_code":"M20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5517.3066},{"ein":452147363,"strein":"45-2147363","name":"BUCKEYE
         RURAL BUILDERS ASSOCIATION","sub_name":"BUCKEYE RURAL BUILDERS ASSOCIATION
-        ","city":"DAYTON","state":"OH","ntee_code":"S21","raw_ntee_code":"S21","subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.3335},{"ein":314215215,"strein":"31-4215215","name":"LICKING
-        RURAL ELECTRIFICATION INC","sub_name":"LICKING RURAL ELECTRIFICATION INC ","city":"NEWARK","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.3335},{"ein":50592013,"strein":"05-0592013","name":"LICKING
-        RURAL ELECTRIFICATION INC","sub_name":"LICKING RURAL ELECTRIFICATION INC ","city":"NEWARK","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.3335},{"ein":843235641,"strein":"84-3235641","name":"OHIO
-        RURAL HEALTH ASSOCIATION","sub_name":"OHIO RURAL HEALTH ASSOCIATION","city":"ASHLAND","state":"OH","ntee_code":"E03","raw_ntee_code":"E03","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.3335},{"ein":362498159,"strein":"36-2498159","name":"RURAL
-        ELECTRICITY RESOURCE COUNCIL","sub_name":"RURAL ELECTRICITY RESOURCE COUNCIL","city":"WILMINGTON","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":true,"have_extracts":true,"have_pdfs":true,"score":5504.3335},{"ein":461178826,"strein":"46-1178826","name":"RURAL
-        HEALTH ACCESS LLC","sub_name":"RURAL HEALTH ACCESS LLC ","city":"NEW ALBANY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.3335},{"ein":205441957,"strein":"20-5441957","name":"WAYNE
-        COUNTY RURAL YOUTH","sub_name":"WAYNE COUNTY RURAL YOUTH","city":"WOOSTER","state":"OH","ntee_code":"O50","raw_ntee_code":"O50","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.3335},{"ein":314112933,"strein":"31-4112933","name":"ADAMS
+        ","city":"DAYTON","state":"OH","ntee_code":"S21","raw_ntee_code":"S21","subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.229},{"ein":50592013,"strein":"05-0592013","name":"LICKING
+        RURAL ELECTRIFICATION INC","sub_name":"LICKING RURAL ELECTRIFICATION INC ","city":"NEWARK","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.229},{"ein":314215215,"strein":"31-4215215","name":"LICKING
+        RURAL ELECTRIFICATION INC","sub_name":"LICKING RURAL ELECTRIFICATION INC ","city":"NEWARK","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.229},{"ein":843235641,"strein":"84-3235641","name":"OHIO
+        RURAL HEALTH ASSOCIATION","sub_name":"OHIO RURAL HEALTH ASSOCIATION","city":"ASHLAND","state":"OH","ntee_code":"E03","raw_ntee_code":"E03","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.229},{"ein":461178826,"strein":"46-1178826","name":"RURAL
+        HEALTH ACCESS LLC","sub_name":"RURAL HEALTH ACCESS LLC ","city":"NEW ALBANY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.229},{"ein":205441957,"strein":"20-5441957","name":"WAYNE
+        COUNTY RURAL YOUTH","sub_name":"WAYNE COUNTY RURAL YOUTH","city":"WOOSTER","state":"OH","ntee_code":"O50","raw_ntee_code":"O50","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5504.229},{"ein":314112933,"strein":"31-4112933","name":"ADAMS
         RURAL ELECTRIC COOPERATIVE INC","sub_name":"ADAMS RURAL ELECTRIC COOPERATIVE
-        INC","city":"WEST UNION","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5091.1606},{"ein":310231070,"strein":"31-0231070","name":"BUTLER
-        RURAL ELECTRIC COOP INC","sub_name":"BUTLER RURAL ELECTRIC COOP INC","city":"OXFORD","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5091.1606},{"ein":311078628,"strein":"31-1078628","name":"NATIONAL
+        INC","city":"WEST UNION","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5076.95},{"ein":310231070,"strein":"31-0231070","name":"BUTLER
+        RURAL ELECTRIC COOP INC","sub_name":"BUTLER RURAL ELECTRIC COOP INC","city":"OXFORD","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5076.95},{"ein":341338210,"strein":"34-1338210","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"LOVELAND","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5091.1606},{"ein":237235345,"strein":"23-7235345","name":"NATIONAL
+        ASSOCIATION ","city":"FINDLAY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5076.95},{"ein":341951408,"strein":"34-1951408","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"DELLROY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5091.1606},{"ein":341338210,"strein":"34-1338210","name":"NATIONAL
+        ASSOCIATION ","city":"GARRETTSVILLE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5076.95},{"ein":341952256,"strein":"34-1952256","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"LAGRANGE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5091.1606},{"ein":341951408,"strein":"34-1951408","name":"NATIONAL
+        ASSOCIATION ","city":"SALEM","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5076.95},{"ein":341952861,"strein":"34-1952861","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"WINDSOR","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5091.1606},{"ein":341952256,"strein":"34-1952256","name":"NATIONAL
+        ASSOCIATION ","city":"NEWCOMERSTOWN","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5076.95},{"ein":237235345,"strein":"23-7235345","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"SALEM","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5091.1606},{"ein":341952861,"strein":"34-1952861","name":"NATIONAL
+        ASSOCIATION ","city":"DELLROY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5076.95},{"ein":311078628,"strein":"31-1078628","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"NEWCOMERSTOWN","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5091.1606},{"ein":821542874,"strein":"82-1542874","name":"OHIO
+        ASSOCIATION ","city":"LOVELAND","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5076.95},{"ein":821542874,"strein":"82-1542874","name":"OHIO
         RURAL DEVELOPMENT ALLIANCE INC","sub_name":"OHIO RURAL DEVELOPMENT ALLIANCE
-        INC","city":"MARIETTA","state":"OH","ntee_code":"S31","raw_ntee_code":"S31","subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5091.1606},{"ein":311065790,"strein":"31-1065790","name":"TWIN
-        RIVER RURAL WATER CORP","sub_name":"TWIN RIVER RURAL WATER CORP","city":"HARRISON","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5091.1606},{"ein":237235274,"strein":"23-7235274","name":"NATIONAL
+        INC","city":"MARIETTA","state":"OH","ntee_code":"S31","raw_ntee_code":"S31","subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5076.95},{"ein":311065790,"strein":"31-1065790","name":"TWIN
+        RIVER RURAL WATER CORP","sub_name":"TWIN RIVER RURAL WATER CORP","city":"HARRISON","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5076.95},{"ein":237235274,"strein":"23-7235274","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"BUCYRUS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5051.748},{"ein":237235335,"strein":"23-7235335","name":"NATIONAL
+        ASSOCIATION ","city":"BUCYRUS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5062.1655},{"ein":237235335,"strein":"23-7235335","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"WINCHESTER","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5051.748},{"ein":311763736,"strein":"31-1763736","name":"NATIONAL
+        ASSOCIATION ","city":"WINCHESTER","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5062.1655},{"ein":311763736,"strein":"31-1763736","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"SOUTHPOINT","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5051.748},{"ein":341120194,"strein":"34-1120194","name":"COMMUNITY
-        AND RURAL HEALTH SERVICES","sub_name":"COMMUNITY AND RURAL HEALTH SERVICES","city":"FREMONT","state":"OH","ntee_code":"E39Z","raw_ntee_code":"E39Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5050.73},{"ein":200176640,"strein":"20-0176640","name":"DARKE
-        RURAL ELECTRIC TRUST INC","sub_name":"DARKE RURAL ELECTRIC TRUST INC","city":"GREENVILLE","state":"OH","ntee_code":"T30","raw_ntee_code":"T30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5050.73},{"ein":237235333,"strein":"23-7235333","name":"NATIONAL
-        RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"FAYETTE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5050.73},{"ein":341946854,"strein":"34-1946854","name":"WESTMINSTER
-        RURAL FIRE DEPT INC","sub_name":"WESTMINSTER RURAL FIRE DEPT INC","city":"HARROD","state":"OH","ntee_code":"M24","raw_ntee_code":"M24","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5050.73},{"ein":344215670,"strein":"34-4215670","name":"DARKE
+        ASSOCIATION ","city":"TROY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5062.1655},{"ein":344215670,"strein":"34-4215670","name":"DARKE
         RURAL ELECTRIC COOPERATIVE INC","sub_name":"DARKE RURAL ELECTRIC COOPERATIVE
-        INC","city":"GREENVILLE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5039.634},{"ein":341313824,"strein":"34-1313824","name":"GETTYSBURG
-        RURAL FIRE DEPT 90","sub_name":"GETTYSBURG RURAL FIRE DEPT 90","city":"GETTYSBURG","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5039.634},{"ein":237235261,"strein":"23-7235261","name":"NATIONAL
+        INC","city":"GREENVILLE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5057.0386},{"ein":341313824,"strein":"34-1313824","name":"GETTYSBURG
+        RURAL FIRE DEPT 90","sub_name":"GETTYSBURG RURAL FIRE DEPT 90","city":"GETTYSBURG","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5057.0386},{"ein":237235261,"strein":"23-7235261","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"GRAYSVILLE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5039.634},{"ein":943434149,"strein":"94-3434149","name":"NATIONAL
+        ASSOCIATION ","city":"GRAYSVILLE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5057.0386},{"ein":943434149,"strein":"94-3434149","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"URBANA","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5039.634},{"ein":262753307,"strein":"26-2753307","name":"OHIO
+        ASSOCIATION ","city":"SPRINGFIELD","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5057.0386},{"ein":262753307,"strein":"26-2753307","name":"OHIO
         RURAL BROADBAND ASSOCIATION I","sub_name":"OHIO RURAL BROADBAND ASSOCIATION
-        I","city":"OKOLONA","state":"OH","ntee_code":"S41","raw_ntee_code":"S41","subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5039.634},{"ein":311412789,"strein":"31-1412789","name":"OHIO
-        RURAL FIRE COUNCIL INC","sub_name":"OHIO RURAL FIRE COUNCIL INC","city":"REYNOLDSBURG","state":"OH","ntee_code":"M40Z","raw_ntee_code":"M40Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5039.634},{"ein":854318216,"strein":"85-4318216","name":"RURAL
-        RELIEF MOBILE FOOD PANTRY","sub_name":"RURAL RELIEF MOBILE FOOD PANTRY","city":"ROOTSTOWN","state":"OH","ntee_code":"K31","raw_ntee_code":"K31","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5039.634},{"ein":311435962,"strein":"31-1435962","name":"BUTLER
+        I","city":"OKOLONA","state":"OH","ntee_code":"S41","raw_ntee_code":"S41","subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5057.0386},{"ein":854318216,"strein":"85-4318216","name":"RURAL
+        RELIEF MOBILE FOOD PANTRY","sub_name":"RURAL RELIEF MOBILE FOOD PANTRY","city":"ROOTSTOWN","state":"OH","ntee_code":"K31","raw_ntee_code":"K31","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5057.0386},{"ein":341120194,"strein":"34-1120194","name":"COMMUNITY
+        AND RURAL HEALTH SERVICES","sub_name":"COMMUNITY AND RURAL HEALTH SERVICES","city":"FREMONT","state":"OH","ntee_code":"E39Z","raw_ntee_code":"E39Z","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5038.9155},{"ein":200176640,"strein":"20-0176640","name":"DARKE
+        RURAL ELECTRIC TRUST INC","sub_name":"DARKE RURAL ELECTRIC TRUST INC","city":"GREENVILLE","state":"OH","ntee_code":"T30","raw_ntee_code":"T30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5038.9155},{"ein":237235333,"strein":"23-7235333","name":"NATIONAL
+        RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
+        ASSOCIATION ","city":"FAYETTE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5038.9155},{"ein":473193029,"strein":"47-3193029","name":"OHIO
+        RURAL HERITAGE ASSOCIATION INC","sub_name":"OHIO RURAL HERITAGE ASSOCIATION
+        INC","city":"RIPLEY","state":"OH","ntee_code":"A80","raw_ntee_code":"A80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5038.9155},{"ein":341946854,"strein":"34-1946854","name":"WESTMINSTER
+        RURAL FIRE DEPT INC","sub_name":"WESTMINSTER RURAL FIRE DEPT INC","city":"HARROD","state":"OH","ntee_code":"M24","raw_ntee_code":"M24","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5038.9155},{"ein":311435962,"strein":"31-1435962","name":"BUTLER
         RURAL COMMUNITY CONNECTION INC","sub_name":"BUTLER RURAL COMMUNITY CONNECTION
-        INC","city":"OXFORD","state":"OH","ntee_code":"T50","raw_ntee_code":"T50","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5028.4907},{"ein":311763629,"strein":"31-1763629","name":"NATIONAL
+        INC","city":"OXFORD","state":"OH","ntee_code":"T50","raw_ntee_code":"T50","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5026.4478},{"ein":311763629,"strein":"31-1763629","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCATION ","city":"NASHPORT","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5028.4907},{"ein":237235332,"strein":"23-7235332","name":"NATIONAL
+        ASSOCATION ","city":"NASHPORT","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5026.4478},{"ein":237235332,"strein":"23-7235332","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"LEWISBURG","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5028.4907},{"ein":522366826,"strein":"52-2366826","name":"NATIONAL
+        ASSOCIATION ","city":"TIPP CITY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5026.4478},{"ein":522366826,"strein":"52-2366826","name":"NATIONAL
         RURAL LETTER CARRIERS ASSOCIATION","sub_name":"NATIONAL RURAL LETTER CARRIERS
-        ASSOCIATION ","city":"FINDLAY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5028.4907},{"ein":310407700,"strein":"31-0407700","name":"PIONEER
+        ASSOCIATION ","city":"WADSWORTH","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":5,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5026.4478},{"ein":883238680,"strein":"88-3238680","name":"NORTHERN
+        OHIO RURAL STEM COLLABORATIVE","sub_name":"NORTHERN OHIO RURAL STEM COLLABORATIVE","city":"GROVE
+        CITY","state":"OH","ntee_code":"B01","raw_ntee_code":"B01","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5026.4478},{"ein":310407700,"strein":"31-0407700","name":"PIONEER
         RURAL ELECTRIC COOPERATIVE INC","sub_name":"PIONEER RURAL ELECTRIC COOPERATIVE
-        INC","city":"PIQUA","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5028.4907},{"ein":311647785,"strein":"31-1647785","name":"UNION
-        RURAL ELECTRIC TRUST INC","sub_name":"UNION RURAL ELECTRIC TRUST INC ","city":"MARYSVILLE","state":"OH","ntee_code":"S20","raw_ntee_code":"S20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5028.4907},{"ein":237203919,"strein":"23-7203919","name":"BROWN
+        INC","city":"PIQUA","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5026.4478},{"ein":362498159,"strein":"36-2498159","name":"RURAL
+        ELECTRICITY RESOURCE COUNCIL INC","sub_name":"RURAL ELECTRICITY RESOURCE COUNCIL
+        INC","city":"NEW VIENNA","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":0,"has_subseccd":false,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5026.4478},{"ein":311647785,"strein":"31-1647785","name":"UNION
+        RURAL ELECTRIC TRUST INC","sub_name":"UNION RURAL ELECTRIC TRUST INC ","city":"MARYSVILLE","state":"OH","ntee_code":"S20","raw_ntee_code":"S20","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":5026.4478},{"ein":237203919,"strein":"23-7203919","name":"BROWN
         COUNTY RURAL WATER ASSOCIATION INC","sub_name":"BROWN COUNTY RURAL WATER ASSOCIATION
-        INC","city":"RIPLEY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4685.9873},{"ein":314329510,"strein":"31-4329510","name":"UNION
-        RURAL ELECTRIC CO-OP INC","sub_name":"UNION RURAL ELECTRIC CO-OP INC","city":"MARYSVILLE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4685.9873},{"ein":346554732,"strein":"34-6554732","name":"CHATTANOOGA
+        INC","city":"RIPLEY","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4671.3447},{"ein":314329510,"strein":"31-4329510","name":"UNION
+        RURAL ELECTRIC CO-OP INC","sub_name":"UNION RURAL ELECTRIC CO-OP INC","city":"MARYSVILLE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4671.3447},{"ein":346554732,"strein":"34-6554732","name":"CHATTANOOGA
         RURAL FIRE INC PROTECTION ASSOCIATION","sub_name":"CHATTANOOGA RURAL FIRE
-        INC PROTECTION ASSOCIATION","city":"ROCKFORD","state":"OH","ntee_code":"M24","raw_ntee_code":"M24","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4649.74},{"ein":237299345,"strein":"23-7299345","name":"COUNCIL
+        INC PROTECTION ASSOCIATION","city":"ROCKFORD","state":"OH","ntee_code":"M24","raw_ntee_code":"M24","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4657.747},{"ein":237299345,"strein":"23-7299345","name":"COUNCIL
         ON RURAL SERVICE PROGRAMS INC","sub_name":"COUNCIL ON RURAL SERVICE PROGRAMS
-        INC","city":"PIQUA","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4649.74},{"ein":341626761,"strein":"34-1626761","name":"COMMUNITY
+        INC","city":"PIQUA","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4657.747},{"ein":341626761,"strein":"34-1626761","name":"COMMUNITY
         AND RURAL HEALTH SERVICES FOUNDATION","sub_name":"COMMUNITY AND RURAL HEALTH
-        SERVICES FOUNDATION","city":"FREMONT","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4649.3145},{"ein":314137520,"strein":"31-4137520","name":"BUCKEYE
+        SERVICES FOUNDATION","city":"FREMONT","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4636.906},{"ein":314137520,"strein":"31-4137520","name":"BUCKEYE
         RURAL ELECTRIC CO-OP INC","sub_name":"BUCKEYE RURAL ELECTRIC CO-OP INC","city":"RIO
-        GRANDE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4628.4146},{"ein":310742149,"strein":"31-0742149","name":"GALLIA
+        GRANDE","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4625.0283},{"ein":310742149,"strein":"31-0742149","name":"GALLIA
         COUNTY RURAL WATER ASSOCIATION INCORPORATED","sub_name":"GALLIA COUNTY RURAL
-        WATER ASSOCIATION INCORPORATED","city":"GALLIPOLIS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4628.4146},{"ein":340365430,"strein":"34-0365430","name":"LORAIN-MEDINA
-        RURAL ELECTRIC COOP INC","sub_name":"LORAIN-MEDINA RURAL ELECTRIC COOP INC","city":"WELLINGTON","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4628.4146},{"ein":341352840,"strein":"34-1352840","name":"GREEN
+        WATER ASSOCIATION INCORPORATED","city":"GALLIPOLIS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4625.0283},{"ein":340365430,"strein":"34-0365430","name":"LORAIN-MEDINA
+        RURAL ELECTRIC COOP INC","sub_name":"LORAIN-MEDINA RURAL ELECTRIC COOP INC","city":"WELLINGTON","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4625.0283},{"ein":341352840,"strein":"34-1352840","name":"GREEN
         SPRINGS RURAL VOLUNTEER FIRE DEPARTMENT INC","sub_name":"GREEN SPRINGS RURAL
-        VOLUNTEER FIRE DEPARTMENT INC","city":"GREEN SPRINGS","state":"OH","ntee_code":"M24","raw_ntee_code":"M24","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4307.0327},{"ein":271073951,"strein":"27-1073951","name":"HORN
+        VOLUNTEER FIRE DEPARTMENT INC","city":"GREEN SPRINGS","state":"OH","ntee_code":"M24","raw_ntee_code":"M24","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4313.201},{"ein":271073951,"strein":"27-1073951","name":"HORN
         OF AFRICA RURAL AND URBAN NETWORKS","sub_name":"HORN OF AFRICA RURAL AND URBAN
-        NETWORKS ","city":"COLUMBUS","state":"OH","ntee_code":"Q30","raw_ntee_code":"Q30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4297.1123},{"ein":341882504,"strein":"34-1882504","name":"LORAIN-MEDINA
+        NETWORKS ","city":"COLUMBUS","state":"OH","ntee_code":"Q30","raw_ntee_code":"Q30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4309.3984},{"ein":341882504,"strein":"34-1882504","name":"LORAIN-MEDINA
         RURAL ELECTRIC PEOPLE FUND INC","sub_name":"LORAIN-MEDINA RURAL ELECTRIC PEOPLE
-        FUND INC","city":"WELLINGTON","state":"OH","ntee_code":"T30","raw_ntee_code":"T30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4287.3433},{"ein":10603034,"strein":"01-0603034","name":"RURAL
+        FUND INC","city":"WELLINGTON","state":"OH","ntee_code":"T30","raw_ntee_code":"T30","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4283.0186},{"ein":10603034,"strein":"01-0603034","name":"RURAL
         HEALTH COLLABORATIVE OF SOUTHERN OHIO INC","sub_name":"RURAL HEALTH COLLABORATIVE
-        OF SOUTHERN OHIO INC","city":"SEAMAN","state":"OH","ntee_code":"E70","raw_ntee_code":"E70","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4287.3433},{"ein":311322226,"strein":"31-1322226","name":"HIGHLAND
+        OF SOUTHERN OHIO INC","city":"WINCHESTER","state":"OH","ntee_code":"E70","raw_ntee_code":"E70","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4283.0186},{"ein":311322226,"strein":"31-1322226","name":"HIGHLAND
         RIDGE RURAL WATER AND SEWER ASSOCIATION INC","sub_name":"HIGHLAND RIDGE RURAL
-        WATER AND SEWER ASSOCIATION INC","city":"LOWER SALEM","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4042.6384},{"ein":510174617,"strein":"51-0174617","name":"OHIO
+        WATER AND SEWER ASSOCIATION INC","city":"LOWER SALEM","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4027.868},{"ein":510174617,"strein":"51-0174617","name":"OHIO
         RURAL ELECTRIC COOPERATIVES INC COUNTRY LIVING MAGAZINE","sub_name":"OHIO
-        RURAL ELECTRIC COOPERATIVES INC COUNTRY LIVING MAGAZINE","city":"COLUMBUS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4042.6384},{"ein":262588330,"strein":"26-2588330","name":"APPALACHIAN
-        RURAL COALITION FOR THE HOMELESS IN OHIO","sub_name":"APPALACHIAN RURAL COALITION
-        FOR THE HOMELESS IN OHIO ","city":"WAVERLY","state":"OH","ntee_code":"L80","raw_ntee_code":"L80","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4011.7383},{"ein":311075983,"strein":"31-1075983","name":"COUNCIL
+        RURAL ELECTRIC COOPERATIVES INC COUNTRY LIVING MAGAZINE","city":"COLUMBUS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":4027.868},{"ein":900787873,"strein":"90-0787873","name":"AUXILIARY
+        OF THE OHIO RURAL LETTER CARRIERS ASSOCIATION","sub_name":"AUXILIARY OF THE
+        OHIO RURAL LETTER CARRIERS ASSOCIATION","city":"MINSTER","state":"OH","ntee_code":"J40","raw_ntee_code":"J40","subseccd":4,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":3998.9348},{"ein":311075983,"strein":"31-1075983","name":"COUNCIL
         FOR HOUSING AND RURAL DEVELOPMENT OF OHIO INC","sub_name":"COUNCIL FOR HOUSING
-        AND RURAL DEVELOPMENT OF OHIO INC","city":"COLUMBUS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":3782.9932},{"ein":463225768,"strein":"46-3225768","name":"CENTER
+        AND RURAL DEVELOPMENT OF OHIO INC","city":"COLUMBUS","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":6,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":3768.3652},{"ein":463225768,"strein":"46-3225768","name":"CENTER
         FOR THE STUDY OF ART IN RURAL AMERICA","sub_name":"CENTER FOR THE STUDY OF
-        ART IN RURAL AMERICA","city":"CANTON","state":"OH","ntee_code":"A99","raw_ntee_code":"A99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":3736.712},{"ein":344377745,"strein":"34-4377745","name":"TRI
+        ART IN RURAL AMERICA","city":"CANTON","state":"OH","ntee_code":"A99","raw_ntee_code":"A99","subseccd":3,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":3731.274},{"ein":344377745,"strein":"34-4377745","name":"TRI
         COUNTY RURAL ELECTRIC CO OPERATIVE INC R D K-2","sub_name":"TRI COUNTY RURAL
-        ELECTRIC CO OPERATIVE INC R D K-2","city":"MALINTA","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":3311.5037}],"num_pages":1,"cur_page":0,"page_offset":0,"per_page":100,"search_query":"rural","selected_state":"OH","selected_ntee":null,"selected_code":null,"data_source":"ProPublica
+        ELECTRIC CO OPERATIVE INC R D K-2","city":"MALINTA","state":"OH","ntee_code":null,"raw_ntee_code":null,"subseccd":12,"has_subseccd":true,"have_filings":null,"have_extracts":null,"have_pdfs":null,"score":3305.544}],"num_pages":1,"cur_page":0,"page_offset":0,"per_page":100,"search_query":"rural","selected_state":"OH","selected_ntee":null,"selected_code":null,"data_source":"ProPublica
         Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS
         Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS
         Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data","api_version":2}'
-    http_version:
-  recorded_at: Tue, 13 Jul 2021 01:47:51 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Tue, 03 Jan 2023 21:22:48 GMT
+recorded_with: VCR 6.1.0
