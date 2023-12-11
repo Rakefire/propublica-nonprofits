@@ -21,8 +21,7 @@ end
 
 module Propublica
   module Nonprofits
-    class DataNotFetched < StandardError
-    end
+    DataNotFetched = Class.new(StandardError)
 
     def self.search(term, state: nil, ntee: nil, page: nil, fetch_all: false)
       search_results(term, state: state, ntee: ntee, page: page, fetch_all: fetch_all)
@@ -78,6 +77,7 @@ module Propublica
     def self.connection
       Faraday
         .new(API_BASE_URL) do |f|
+          f.use Faraday::Response::RaiseError
           f.response :json
         end
     end
@@ -89,6 +89,8 @@ module Propublica
 
     rescue JSON::ParserError => e
       raise JSON::ParserError.new("Propublica API Parsing Error: #{e.message}")
+    rescue Faraday::ServerError, Faraday::ClientError => e
+      raise DataNotFetched.new("Propublica API Error: #{e.message}")
     end
   end
 end
