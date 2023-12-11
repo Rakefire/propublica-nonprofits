@@ -4,7 +4,6 @@ require "bundler/setup"
 require "minitest/autorun"
 require "minitest/line/describe_track"
 require "webmock/minitest"
-require "pry"
 require "vcr"
 
 VCR.configure do |c|
