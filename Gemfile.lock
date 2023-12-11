@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    propublica-nonprofits (1.1.0)
+    propublica-nonprofits (1.1.1)
       faraday (> 1.0, < 3.0)
       json
 
@@ -10,14 +10,16 @@ GEM
   specs:
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.2.0)
     crack (0.4.5)
       rexml
-    faraday (2.7.2)
+    faraday (2.7.12)
+      base64
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
     hashdiff (1.0.1)
-    json (2.5.1)
+    json (2.7.1)
     minitest (5.11.3)
     minitest-line (0.6.5)
       minitest (~> 5.0)
