@@ -25,7 +25,7 @@ GEM
       minitest (~> 5.0)
     public_suffix (5.0.1)
     rake (13.0.1)
-    rexml (3.3.2)
+    rexml (3.3.3)
       strscan
     ruby2_keywords (0.0.5)
     strscan (3.1.0)
