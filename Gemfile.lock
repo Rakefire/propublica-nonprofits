@@ -25,10 +25,8 @@ GEM
       minitest (~> 5.0)
     public_suffix (5.0.1)
     rake (13.0.1)
-    rexml (3.3.6)
-      strscan
+    rexml (3.3.9)
     ruby2_keywords (0.0.5)
-    strscan (3.1.0)
     vcr (6.1.0)
     webmock (3.18.1)
       addressable (>= 2.8.0)
